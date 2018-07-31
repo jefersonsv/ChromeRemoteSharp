@@ -9,8 +9,6 @@ namespace ChromeRemoteSharp
 {
     public partial class WebDriver
     {
-        
-
         (long, string) StringCommand(string method, params KeyValuePair<string, object>[] args)
         {
             var currentId = ++id;

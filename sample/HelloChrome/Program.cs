@@ -11,17 +11,26 @@ namespace HelloChrome
 
         static void Main(string[] args)
         {
+            Helper.KillAllChromeInstances();
+            Helper.StartChromeHeadless("");
+            Helper.StartChromeDevTools();
+
             var url = Helper.FirstWebSocketDebuggerUrlAsync().Result;
             driver = new WebDriver(url);
 
             Run();
 
-            System.Threading.Thread.Sleep(Timeout.Infinite);
+            Console.ReadKey();
             driver.CloseConnection();
+
+            //System.Threading.Thread.Sleep(Timeout.Infinite);
         }
 
         static async Task Run()
         {
+            // 
+            
+
             // navigate
             var naviJson = await driver.Page.NavigateAsync(new Uri("https://www.globo.com"));
             var frameId = naviJson["result"]["frameId"].ToString();
