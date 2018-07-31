@@ -15,7 +15,7 @@ namespace ChromeRemoteSharp.PageDomain
         /// <returns></returns>
         public async Task<JObject> NavigateAsync(Uri url)
         {
-            return await CommandAsync("navigate", new KeyValuePair<string, string>("url", url.ToString()));
+            return await CommandAsync("navigate", new KeyValuePair<string, object>("url", url.ToString()));
         }
     }
 }

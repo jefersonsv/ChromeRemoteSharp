@@ -72,7 +72,7 @@ namespace ChromeRemoteSharp
             ws.Close();
         }
 
-        public async Task<JObject> Command(string command, params KeyValuePair<string, string>[] args)
+        public async Task<JObject> Command(string command, params KeyValuePair<string, object>[] args)
         {
             return await Task.Run<JObject>(() =>
             {

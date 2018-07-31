@@ -22,22 +22,29 @@ namespace HelloChrome
 
         static async Task Run()
         {
-            //var navi = await driver.NavigateAsync(new Uri("https://www.globo.com"));
-            //var frameId = navi["result"]["frameId"].ToString();
-            //Console.WriteLine(frameId);
-            //Console.WriteLine(navi);
+            // navigate
+            var naviJson = await driver.Page.NavigateAsync(new Uri("https://www.globo.com"));
+            var frameId = naviJson["result"]["frameId"].ToString();
+            
+            // screenshot
+            var screenShotJson = await driver.Page.CaptureScreenshotAsync();
 
-            //var p = await driver.CaptureScreenshotAsync();
-            //Console.WriteLine(p);
+            // get version
+            Console.WriteLine(await driver.Browser.GetVersionAsync());
 
-            //Console.WriteLine(await driver.GetVersionAsync());
-            //Console.WriteLine(await driver.GetBrowserCommandLineAsync());
-            //Console.WriteLine(await driver.GetCookiesAsync());
+            // get browser command line
+            Console.WriteLine(await driver.Browser.GetBrowserCommandLineAsync());
 
-            var doc = await driver.Dom.GetDocumentAsync();
-            var nodeid = doc["result"]["root"]["nodeId"].ToString();
-            Console.WriteLine(doc);
-            //Console.WriteLine(await driver.Dom.GetOuterHtmlAsync());
+            // page cookies
+            Console.WriteLine(await driver.Page.GetCookiesAsync());
+
+            // get document
+            var docJson = await driver.Dom.GetDocumentAsync();
+            var nodeId = docJson["result"]["root"]["nodeId"].ToString();
+
+            // get html
+            var htmlJson = await driver.Dom.GetOuterHtmlAsync(int.Parse(nodeId));
+            var html = htmlJson["result"]["outerHTML"].ToString();
         }
     }
 }

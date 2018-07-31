@@ -17,7 +17,7 @@ namespace ChromeRemoteSharp
             this.driver = _driver;
         }
 
-        protected async Task<JObject> CommandAsync(string command, params KeyValuePair<string, string>[] args)
+        protected async Task<JObject> CommandAsync(string command, params KeyValuePair<string, object>[] args)
         {
             return await driver.Command($"{prefix}.{command}", args);
         }

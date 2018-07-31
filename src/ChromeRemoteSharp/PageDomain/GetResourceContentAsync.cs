@@ -15,8 +15,8 @@ namespace ChromeRemoteSharp.PageDomain
         public async Task<JObject> GetResourceContentAsync(string frameId, string url)
         {
             return await CommandAsync("getResourceContent",
-                new KeyValuePair<string, string>("frameId", frameId),
-                new KeyValuePair<string, string>("url", url)
+                new KeyValuePair<string, object>("frameId", frameId),
+                new KeyValuePair<string, object>("url", url)
                 );
         }
     }

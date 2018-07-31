@@ -12,9 +12,11 @@ namespace ChromeRemoteSharp.DomDomain
         /// <seealso cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getOuterHTML"/>
         /// </summary>
         /// <returns></returns>
-        public async Task<JObject> GetOuterHtmlAsync()
+        public async Task<JObject> GetOuterHtmlAsync(int nodeId)
         {
-            return await CommandAsync("getOuterHTML");
+            return await CommandAsync("getOuterHTML", 
+                new KeyValuePair<string, object>("nodeId", nodeId)
+                );
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ChromeRemoteSharp
     {
         
 
-        (long, string) StringCommand(string method, params KeyValuePair<string, string>[] args)
+        (long, string) StringCommand(string method, params KeyValuePair<string, object>[] args)
         {
             var currentId = ++id;
             cmds.Add(currentId, null);
@@ -25,7 +25,7 @@ namespace ChromeRemoteSharp
                 JObject param = new JObject();
                 foreach (var item in args)
                 {
-                    param[item.Key] = item.Value;
+                    param[item.Key] = JToken.FromObject(item.Value);
                 }
 
                 obj["params"] = param;
