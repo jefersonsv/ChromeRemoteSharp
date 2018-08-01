@@ -6,6 +6,11 @@ namespace ChromeRemoteSharp.BrowserDomain
 {
     public partial class BrowserDomain : Domain
     {
-        public BrowserDomain(WebDriver driver) : base(driver, "Browser") { }
+        /// <summary>
+        /// {1}
+        /// <see cref="{2}"/>
+        /// </summary>
+        /// <param name="rawDriver"></param>
+        internal BrowserDomain(RawDriver rawDriver) : base(rawDriver, "Browser") { }
     }
 }

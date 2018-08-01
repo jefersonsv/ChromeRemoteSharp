@@ -9,9 +9,9 @@ namespace ChromeRemoteSharp
     public abstract class Domain
     {
         readonly string prefix;
-        readonly WebDriver driver;
+        readonly RawDriver driver;
 
-        protected Domain(WebDriver _driver, string _prefix)
+        protected Domain(RawDriver _driver, string _prefix)
         {
             this.prefix = _prefix;
             this.driver = _driver;

@@ -7,7 +7,7 @@ namespace HelloChrome
 {
     class Program
     {
-        static WebDriver driver = null;
+        static LowLevelDriver driver = null;
 
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace HelloChrome
             Helper.StartChromeDevTools();
 
             var url = Helper.FirstWebSocketDebuggerUrlAsync().Result;
-            driver = new WebDriver(url);
+            driver = new LowLevelDriver(url);
 
             Run();
 
@@ -28,9 +28,6 @@ namespace HelloChrome
 
         static async Task Run()
         {
-            // 
-            
-
             // navigate
             var naviJson = await driver.Page.NavigateAsync(new Uri("https://www.globo.com"));
             var frameId = naviJson["result"]["frameId"].ToString();

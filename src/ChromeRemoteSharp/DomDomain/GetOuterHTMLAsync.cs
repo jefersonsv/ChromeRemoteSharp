@@ -9,8 +9,9 @@ namespace ChromeRemoteSharp.DomDomain
     public partial class DomDomain
     {
         /// <summary>
-        /// <seealso cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getOuterHTML"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getOuterHTML"/>
         /// </summary>
+        /// <param name="nodeId"></param>
         /// <returns></returns>
         public async Task<JObject> GetOuterHtmlAsync(int nodeId)
         {

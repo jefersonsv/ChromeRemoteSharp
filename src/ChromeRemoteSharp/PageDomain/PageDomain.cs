@@ -6,6 +6,6 @@ namespace ChromeRemoteSharp.PageDomain
 {
     public partial class PageDomain : Domain
     {
-        public PageDomain(WebDriver driver) : base(driver, "Page") { }
+        internal PageDomain(RawDriver driver) : base(driver, "Page") { }
     }
 }

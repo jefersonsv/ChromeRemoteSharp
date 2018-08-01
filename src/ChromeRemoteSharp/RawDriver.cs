@@ -11,7 +11,7 @@ namespace ChromeRemoteSharp
     /// <summary>
     /// https://chromedevtools.github.io/devtools-protocol/
     /// </summary>
-    public partial class WebDriver
+    public class RawDriver
     {
         WebSocket ws;
         long id;
@@ -19,16 +19,8 @@ namespace ChromeRemoteSharp
 
         public TimeSpan TimeCheckResponse { get; set; } = new TimeSpan(0, 0, 0, 0, 100);
 
-        public DomDomain.DomDomain Dom { get; }
-        public BrowserDomain.BrowserDomain Browser { get; }
-        public PageDomain.PageDomain Page { get; }
-
-        public WebDriver(Uri url)
+        public RawDriver(Uri url)
         {
-            this.Dom = new DomDomain.DomDomain(this);
-            this.Browser = new BrowserDomain.BrowserDomain(this);
-            this.Page = new PageDomain.PageDomain(this);
-
             ws = new WebSocket(url.ToString());
             ws.OnClose += Ws_OnClose;
             ws.OnError += Ws_OnError;
@@ -84,6 +76,29 @@ namespace ChromeRemoteSharp
 
                 return cmds[cmd.Item1];
             });
+        }
+
+        (long, string) StringCommand(string method, params KeyValuePair<string, object>[] args)
+        {
+            var currentId = ++id;
+            cmds.Add(currentId, null);
+
+            JObject obj = new JObject();
+            obj["method"] = method;
+            obj["id"] = currentId;
+
+            if (args != null && args.Any())
+            {
+                JObject param = new JObject();
+                foreach (var item in args)
+                {
+                    param[item.Key] = JToken.FromObject(item.Value);
+                }
+
+                obj["params"] = param;
+            }
+
+            return (currentId, obj.ToString());
         }
     }
 }

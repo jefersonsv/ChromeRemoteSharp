@@ -6,6 +6,6 @@ namespace ChromeRemoteSharp.DomDomain
 {
     public partial class DomDomain : Domain
     {
-        public DomDomain(WebDriver driver) : base(driver, "DOM") { }
+        internal DomDomain(RawDriver driver) : base(driver, "DOM") { }
     }
 }
