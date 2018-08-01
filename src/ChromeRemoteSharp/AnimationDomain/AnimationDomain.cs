@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.AnimationDomain
 {
-    public partial class AnimationDomain : Domain
+    public partial class AnimationDomain : BaseDomain
     {
         /// <summary>
         /// 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.ApplicationCacheDomain
 {
-    public partial class ApplicationCacheDomain : Domain
+    public partial class ApplicationCacheDomain : BaseDomain
     {
         /// <summary>
         /// 

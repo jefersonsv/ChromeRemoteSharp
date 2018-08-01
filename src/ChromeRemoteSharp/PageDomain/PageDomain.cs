@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.PageDomain
 {
-    public partial class PageDomain : Domain
+    public partial class PageDomain : BaseDomain
     {
         internal PageDomain(RawDriver driver) : base(driver, "Page") { }
     }

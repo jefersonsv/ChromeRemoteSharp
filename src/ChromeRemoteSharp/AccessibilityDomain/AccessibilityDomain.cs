@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.AccessibilityDomain
 {
-    public partial class AccessibilityDomain : Domain
+    public partial class AccessibilityDomain : BaseDomain
     {
         /// <summary>
         /// 

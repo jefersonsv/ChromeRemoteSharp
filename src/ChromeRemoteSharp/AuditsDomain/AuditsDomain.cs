@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.AuditsDomain
 {
-    public partial class AuditsDomain : Domain
+    public partial class AuditsDomain : BaseDomain
     {
         /// <summary>
         /// Audits domain allows investigation of page violations and possible improvements.

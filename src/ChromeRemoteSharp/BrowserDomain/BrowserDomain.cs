@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChromeRemoteSharp.BrowserDomain
 {
-    public partial class BrowserDomain : Domain
+    public partial class BrowserDomain : BaseDomain
     {
         /// <summary>
         /// {1}

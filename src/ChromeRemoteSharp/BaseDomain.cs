@@ -6,12 +6,12 @@ using Newtonsoft.Json.Linq;
 
 namespace ChromeRemoteSharp
 {
-    public abstract class Domain
+    public abstract class BaseDomain
     {
         readonly string prefix;
         readonly RawDriver driver;
 
-        protected Domain(RawDriver _driver, string _prefix)
+        protected BaseDomain(RawDriver _driver, string _prefix)
         {
             this.prefix = _prefix;
             this.driver = _driver;
