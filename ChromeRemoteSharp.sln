@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C259E01-DFF1-4250-84C4-651A1B82481F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		deploy-src.cmd = deploy-src.cmd
 		LICENSE = LICENSE
 		README.md = README.md
 		RESOURCES.md = RESOURCES.md

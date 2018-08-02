@@ -2,8 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1</Version>
+    <Authors>Jeferson Tenorio</Authors>
+    <PackageLicenseUrl>https://gep13.mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jefersonsv/ChromeRemoteSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jefersonsv/ChromeRemoteSharp</RepositoryUrl>
+    <PackageTags>chrome devtools protocol remote driver low level</PackageTags>
+    <Description>Low level implementation of Chrome DevTools Protocol</Description>
+    <Copyright />
   </PropertyGroup>
 
   <ItemGroup>
