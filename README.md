@@ -2,19 +2,28 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://gep13.mit-license.org) [![NuGet version (ChromeRemoteSharp)](https://img.shields.io/nuget/v/ChromeRemoteSharp.svg?style=flat-square)](https://www.nuget.org/packages/ChromeRemoteSharp/)
 
-Low level implementation of Chrome DevTools Protocol
+Low level implementation of Chrome DevTools Protocol.
+This project implements the last version of protocol (https://chromedevtools.github.io/devtools-protocol/tot/)
 
 ## 1.1. Table of contents
 <!-- TOC -->
 
 - [ChromeRemoteSharp](#chromeremotesharp)
     - [1.1. Table of contents](#11-table-of-contents)
-    - [1.2. Domains available](#12-domains-available)
-    - [1.3. Sample](#13-sample)
+    - [1.2. Drivers](#12-drivers)
+    - [1.3. Domains available](#13-domains-available)
+    - [1.4. Sample](#14-sample)
 
 <!-- /TOC -->
 
-## 1.2. Domains available
+## 1.2. Drivers
+
+The library has two drivers
+
+- _RawDriver_. Send and receive custom commands using ws protocol
+- _LowLevelDriver_. Use any available command of domain list
+
+## 1.3. Domains available
 
 - Accessibility
 - ​Animation
@@ -56,7 +65,7 @@ Low level implementation of Chrome DevTools Protocol
 - ​Tethering
 - ​Tracing
 
-## 1.3. Sample
+## 1.4. Sample
 
 ```c#
 Helper.KillAllChromeInstances(); // kill all opened instances of google chrome
@@ -64,7 +73,7 @@ Helper.StartChromeDevTools(); // start new chrome browser instance point to http
 
 if (!await Helper.CheckWebSocketAsync()) // check if remote debugging url it's available
     Helper.StartChromeHeadless(); // start a headless instance of google chrome
-    
+
 var url = await Helper.FirstWebSocketDebuggerUrlAsync(); // get the first ws remote url
 driver = new LowLevelDriver(url); // instance driver
 
