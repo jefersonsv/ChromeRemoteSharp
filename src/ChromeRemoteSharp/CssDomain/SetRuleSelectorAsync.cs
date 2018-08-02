@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Modifies the rule selector.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setRuleSelector"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setRuleSelector"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <param name="range"></param>
         /// <param name="selector"></param>
         /// <returns></returns>
-        public async Task<JObject> SetRuleSelectorAsync(string styleSheetId,string range,string selector)
+        public async Task<JObject> SetRuleSelectorAsync(string styleSheetId, string range, string selector)
         {
             return await CommandAsync("setRuleSelector", 
                  new KeyValuePair<string, object>("styleSheetId", styleSheetId), 

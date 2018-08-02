@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InspectorDomain
     {
         /// <summary>
         /// Enables inspector domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Inspector#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Inspector#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

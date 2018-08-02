@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ServiceWorkerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#updateRegistration"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#method-updateRegistration"/>
         /// </summary>
         /// <param name="scopeURL"></param>
         /// <returns></returns>

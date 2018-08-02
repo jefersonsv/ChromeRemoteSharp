@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Sets JavaScript breakpoint at a given location.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpoint"/>
         /// </summary>
         /// <param name="location">Location to set breakpoint in.</param>
         /// <param name="condition">Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.</param>
         /// <returns></returns>
-        public async Task<JObject> SetBreakpointAsync(string location,string condition)
+        public async Task<JObject> SetBreakpointAsync(string location, string condition = null)
         {
             return await CommandAsync("setBreakpoint", 
                  new KeyValuePair<string, object>("location", location), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Tells whether emulation is supported.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#canEmulate"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-canEmulate"/>
         /// </summary>
 
         /// <returns></returns>

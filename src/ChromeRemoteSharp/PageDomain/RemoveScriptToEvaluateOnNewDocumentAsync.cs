@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Removes given script from the list.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#removeScriptToEvaluateOnNewDocument"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-removeScriptToEvaluateOnNewDocument"/>
         /// </summary>
         /// <param name="identifier"></param>
         /// <returns></returns>

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Sets node HTML markup, returns new node id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#setOuterHTML"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setOuterHTML"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to set markup for.</param>
         /// <param name="outerHTML">Outer HTML markup to set.</param>
         /// <returns></returns>
-        public async Task<JObject> SetOuterHTMLAsync(string nodeId,string outerHTML)
+        public async Task<JObject> SetOuterHTMLAsync(int nodeId, string outerHTML)
         {
             return await CommandAsync("setOuterHTML", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

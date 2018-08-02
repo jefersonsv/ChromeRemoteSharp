@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Emulates the given media for CSS media queries.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setEmulatedMedia"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setEmulatedMedia"/>
         /// </summary>
         /// <param name="media">Media type to emulate. Empty string disables the override.</param>
         /// <returns></returns>

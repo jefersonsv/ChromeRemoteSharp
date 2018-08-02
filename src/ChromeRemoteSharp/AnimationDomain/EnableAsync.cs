@@ -10,8 +10,9 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Enables animation domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-enable"/>
         /// </summary>
+
         /// <returns></returns>
         public async Task<JObject> EnableAsync()
         {

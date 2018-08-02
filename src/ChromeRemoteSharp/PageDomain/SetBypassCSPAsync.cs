@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Enable page Content Security Policy by-passing.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setBypassCSP"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setBypassCSP"/>
         /// </summary>
         /// <param name="enabled">Whether to bypass page CSP.</param>
         /// <returns></returns>

@@ -10,14 +10,14 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Searches for given string in script content.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#searchInContent"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-searchInContent"/>
         /// </summary>
         /// <param name="scriptId">Id of the script to search in.</param>
         /// <param name="query">String to search for.</param>
         /// <param name="caseSensitive">If true, search is case sensitive.</param>
         /// <param name="isRegex">If true, treats string parameter as regex.</param>
         /// <returns></returns>
-        public async Task<JObject> SearchInContentAsync(string scriptId,string query,bool? caseSensitive,bool? isRegex)
+        public async Task<JObject> SearchInContentAsync(string scriptId, string query, bool? caseSensitive = null, bool? isRegex = null)
         {
             return await CommandAsync("searchInContent", 
                  new KeyValuePair<string, object>("scriptId", scriptId), 

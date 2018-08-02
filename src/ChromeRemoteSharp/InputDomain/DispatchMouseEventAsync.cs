@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Dispatches a mouse event to the page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#dispatchMouseEvent"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-dispatchMouseEvent"/>
         /// </summary>
         /// <param name="type">Type of the mouse event.</param>
         /// <param name="x">X coordinate of the event relative to the main frame's viewport in CSS pixels.</param>
@@ -22,7 +22,7 @@ namespace ChromeRemoteSharp.InputDomain
         /// <param name="deltaX">X delta in CSS pixels for mouse wheel event (default: 0).</param>
         /// <param name="deltaY">Y delta in CSS pixels for mouse wheel event (default: 0).</param>
         /// <returns></returns>
-        public async Task<JObject> DispatchMouseEventAsync(string type,int x,int y,string modifiers,string timestamp,string button,string clickCount,int? deltaX,int? deltaY)
+        public async Task<JObject> DispatchMouseEventAsync(string type, int x, int y, string modifiers = null, string timestamp = null, string button = null, string clickCount = null, int? deltaX = null, int? deltaY = null)
         {
             return await CommandAsync("dispatchMouseEvent", 
                  new KeyValuePair<string, object>("type", type), 

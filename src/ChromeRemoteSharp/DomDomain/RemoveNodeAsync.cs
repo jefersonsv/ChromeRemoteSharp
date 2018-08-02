@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Removes node with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#removeNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-removeNode"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to remove.</param>
         /// <returns></returns>
-        public async Task<JObject> RemoveNodeAsync(string nodeId)
+        public async Task<JObject> RemoveNodeAsync(int nodeId)
         {
             return await CommandAsync("removeNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

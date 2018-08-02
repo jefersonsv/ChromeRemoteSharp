@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Sets a specified page scale factor.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setPageScaleFactor"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setPageScaleFactor"/>
         /// </summary>
         /// <param name="pageScaleFactor">Page scale factor.</param>
         /// <returns></returns>

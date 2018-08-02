@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Returns source for the script with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#getScriptSource"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getScriptSource"/>
         /// </summary>
         /// <param name="scriptId">Id of the script to get source for.</param>
         /// <returns></returns>

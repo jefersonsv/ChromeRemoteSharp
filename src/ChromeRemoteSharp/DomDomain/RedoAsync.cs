@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Re-does the last undone action.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#redo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-redo"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#handleJavaScriptDialog"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-handleJavaScriptDialog"/>
         /// </summary>
         /// <param name="accept">Whether to accept or dismiss the dialog.</param>
         /// <param name="promptText">The text to enter into the dialog prompt before accepting. Used only if this is a prompt dialog.</param>
         /// <returns></returns>
-        public async Task<JObject> HandleJavaScriptDialogAsync(bool accept,string promptText)
+        public async Task<JObject> HandleJavaScriptDialogAsync(bool accept, string promptText = null)
         {
             return await CommandAsync("handleJavaScriptDialog", 
                  new KeyValuePair<string, object>("accept", accept), 

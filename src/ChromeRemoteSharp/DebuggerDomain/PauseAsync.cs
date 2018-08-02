@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Stops on the next JavaScript statement.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#pause"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-pause"/>
         /// </summary>
 
         /// <returns></returns>

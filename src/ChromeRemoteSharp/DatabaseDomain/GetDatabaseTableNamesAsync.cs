@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DatabaseDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#getDatabaseTableNames"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-getDatabaseTableNames"/>
         /// </summary>
         /// <param name="databaseId"></param>
         /// <returns></returns>

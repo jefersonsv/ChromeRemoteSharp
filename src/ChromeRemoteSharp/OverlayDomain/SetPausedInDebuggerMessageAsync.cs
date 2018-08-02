@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setPausedInDebuggerMessage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setPausedInDebuggerMessage"/>
         /// </summary>
         /// <param name="message">The message to display, also triggers resume and step over controls.</param>
         /// <returns></returns>
-        public async Task<JObject> SetPausedInDebuggerMessageAsync(string message)
+        public async Task<JObject> SetPausedInDebuggerMessageAsync(string message = null)
         {
             return await CommandAsync("setPausedInDebuggerMessage", 
                  new KeyValuePair<string, object>("message", message)

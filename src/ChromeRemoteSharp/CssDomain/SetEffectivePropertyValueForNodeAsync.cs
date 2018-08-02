@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Find a rule with the given active property for the given node and set the new value for this property
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setEffectivePropertyValueForNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setEffectivePropertyValueForNode"/>
         /// </summary>
         /// <param name="nodeId">The element id for which to set property.</param>
         /// <param name="propertyName"></param>
         /// <param name="value"></param>
         /// <returns></returns>
-        public async Task<JObject> SetEffectivePropertyValueForNodeAsync(string nodeId,string propertyName,string value)
+        public async Task<JObject> SetEffectivePropertyValueForNodeAsync(int nodeId, string propertyName, string value)
         {
             return await CommandAsync("setEffectivePropertyValueForNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

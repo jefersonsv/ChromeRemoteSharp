@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#highlightRect"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightRect"/>
         /// </summary>
         /// <param name="x">X coordinate</param>
         /// <param name="y">Y coordinate</param>
@@ -19,7 +19,7 @@ namespace ChromeRemoteSharp.OverlayDomain
         /// <param name="color">The highlight fill color (default: transparent).</param>
         /// <param name="outlineColor">The highlight outline color (default: transparent).</param>
         /// <returns></returns>
-        public async Task<JObject> HighlightRectAsync(string x,string y,string width,string height,string color,string outlineColor)
+        public async Task<JObject> HighlightRectAsync(string x, string y, string width, string height, string color = null, string outlineColor = null)
         {
             return await CommandAsync("highlightRect", 
                  new KeyValuePair<string, object>("x", x), 

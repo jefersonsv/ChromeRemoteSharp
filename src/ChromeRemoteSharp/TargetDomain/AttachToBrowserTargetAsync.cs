@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Attaches to the browser target, only uses flat sessionId mode.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#attachToBrowserTarget"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-attachToBrowserTarget"/>
         /// </summary>
 
         /// <returns></returns>

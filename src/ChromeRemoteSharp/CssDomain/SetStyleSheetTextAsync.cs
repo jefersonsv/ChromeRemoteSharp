@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Sets the new stylesheet text.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setStyleSheetText"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleSheetText"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <param name="text"></param>
         /// <returns></returns>
-        public async Task<JObject> SetStyleSheetTextAsync(string styleSheetId,string text)
+        public async Task<JObject> SetStyleSheetTextAsync(string styleSheetId, string text)
         {
             return await CommandAsync("setStyleSheetText", 
                  new KeyValuePair<string, object>("styleSheetId", styleSheetId), 

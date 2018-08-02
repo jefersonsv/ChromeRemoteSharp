@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Sets or clears an override of the default background color of the frame. This override is used if the content does not specify one.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setDefaultBackgroundColorOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setDefaultBackgroundColorOverride"/>
         /// </summary>
         /// <param name="color">RGBA of the default background color. If not specified, any existing override will be cleared.</param>
         /// <returns></returns>
-        public async Task<JObject> SetDefaultBackgroundColorOverrideAsync(string color)
+        public async Task<JObject> SetDefaultBackgroundColorOverrideAsync(string color = null)
         {
             return await CommandAsync("setDefaultBackgroundColorOverride", 
                  new KeyValuePair<string, object>("color", color)

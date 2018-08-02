@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Enables target discovery for the specified locations, when `setDiscoverTargets` was set to `true`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#setRemoteLocations"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-setRemoteLocations"/>
         /// </summary>
         /// <param name="locations">List of remote locations.</param>
         /// <returns></returns>

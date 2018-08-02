@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Set default font sizes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setFontSizes"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setFontSizes"/>
         /// </summary>
         /// <param name="fontSizes">Specifies font sizes to set. If a font size is not specified, it won't be changed.</param>
         /// <returns></returns>

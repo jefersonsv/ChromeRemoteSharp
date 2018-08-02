@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// Stop collecting native memory profile.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#stopSampling"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-stopSampling"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PerformanceDomain
     {
         /// <summary>
         /// Enable collecting and reporting metrics.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Performance#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Performance#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

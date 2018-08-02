@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Removes JavaScript breakpoint.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#removeBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-removeBreakpoint"/>
         /// </summary>
         /// <param name="breakpointId"></param>
         /// <returns></returns>

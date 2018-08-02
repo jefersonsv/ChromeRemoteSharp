@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ServiceWorkerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,9 +10,9 @@ namespace ChromeRemoteSharp.SecurityDomain
     {
         /// <summary>
         /// Enable/disable overriding certificate errors. If enabled, all certificate error events need to be handled by the DevTools client and should be answered with `handleCertificateError` commands.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#setOverrideCertificateErrors"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-setOverrideCertificateErrors"/>
         /// </summary>
-        /// <param name="canoverride">If true, certificate errors will be overridden.</param>
+        /// <param name="override">If true, certificate errors will be overridden.</param>
         /// <returns></returns>
         public async Task<JObject> SetOverrideCertificateErrorsAsync(bool canoverride)
         {

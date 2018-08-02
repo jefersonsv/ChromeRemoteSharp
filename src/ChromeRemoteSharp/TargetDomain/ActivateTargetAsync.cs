@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Activates (focuses) the target.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#activateTarget"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-activateTarget"/>
         /// </summary>
         /// <param name="targetId"></param>
         /// <returns></returns>

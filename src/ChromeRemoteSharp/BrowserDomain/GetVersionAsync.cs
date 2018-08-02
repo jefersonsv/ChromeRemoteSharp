@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,8 +9,10 @@ namespace ChromeRemoteSharp.BrowserDomain
     public partial class BrowserDomain
     {
         /// <summary>
-        /// <seealso cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getVersion"/>
+        /// Returns version information.
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getVersion"/>
         /// </summary>
+
         /// <returns></returns>
         public async Task<JObject> GetVersionAsync()
         {

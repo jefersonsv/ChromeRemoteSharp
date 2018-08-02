@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setSkipAllPauses"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setSkipAllPauses"/>
         /// </summary>
         /// <param name="skip">New value for skip pauses state.</param>
         /// <returns></returns>

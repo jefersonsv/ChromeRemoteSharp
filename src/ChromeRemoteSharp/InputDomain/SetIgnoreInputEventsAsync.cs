@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Ignores input events (useful while auditing page).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#setIgnoreInputEvents"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-setIgnoreInputEvents"/>
         /// </summary>
         /// <param name="ignore">Ignores input events processing when set to true.</param>
         /// <returns></returns>

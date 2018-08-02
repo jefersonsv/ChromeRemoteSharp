@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Force the page stop all navigations and pending resource fetches.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#stopLoading"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-stopLoading"/>
         /// </summary>
 
         /// <returns></returns>

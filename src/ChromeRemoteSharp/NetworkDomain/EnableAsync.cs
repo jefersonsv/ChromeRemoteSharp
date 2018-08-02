@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Enables network tracking, network events will now be delivered to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-enable"/>
         /// </summary>
         /// <param name="maxTotalBufferSize">Buffer size in bytes to use when preserving network payloads (XHRs, etc).</param>
         /// <param name="maxResourceBufferSize">Per-resource buffer size in bytes to use when preserving network payloads (XHRs, etc).</param>
         /// <param name="maxPostDataSize">Longest post body size (in bytes) that would be included in requestWillBeSent notification</param>
         /// <returns></returns>
-        public async Task<JObject> EnableAsync(string maxTotalBufferSize,string maxResourceBufferSize,string maxPostDataSize)
+        public async Task<JObject> EnableAsync(string maxTotalBufferSize = null, string maxResourceBufferSize = null, string maxPostDataSize = null)
         {
             return await CommandAsync("enable", 
                  new KeyValuePair<string, object>("maxTotalBufferSize", maxTotalBufferSize), 

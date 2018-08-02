@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Returns present frame tree structure.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#getFrameTree"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getFrameTree"/>
         /// </summary>
 
         /// <returns></returns>

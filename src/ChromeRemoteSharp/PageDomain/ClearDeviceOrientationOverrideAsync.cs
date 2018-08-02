@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Clears the overridden Device Orientation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#clearDeviceOrientationOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-clearDeviceOrientationOverride"/>
         /// </summary>
 
         /// <returns></returns>

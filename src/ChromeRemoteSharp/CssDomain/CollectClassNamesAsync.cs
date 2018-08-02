@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Returns all class names from specified stylesheet.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#collectClassNames"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-collectClassNames"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#prepareForLeakDetection"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-prepareForLeakDetection"/>
         /// </summary>
 
         /// <returns></returns>

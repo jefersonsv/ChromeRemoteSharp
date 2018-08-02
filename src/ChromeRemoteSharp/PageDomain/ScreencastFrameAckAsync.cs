@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Acknowledges that a screencast frame has been received by the frontend.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#screencastFrameAck"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-screencastFrameAck"/>
         /// </summary>
         /// <param name="sessionId">Frame number.</param>
         /// <returns></returns>

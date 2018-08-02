@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Disable type profile. Disabling releases type profile data collected so far.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#stopTypeProfile"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-stopTypeProfile"/>
         /// </summary>
 
         /// <returns></returns>

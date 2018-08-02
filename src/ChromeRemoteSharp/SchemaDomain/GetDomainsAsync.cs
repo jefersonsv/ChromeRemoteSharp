@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.SchemaDomain
     {
         /// <summary>
         /// Returns supported domains.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Schema#getDomains"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Schema#method-getDomains"/>
         /// </summary>
 
         /// <returns></returns>

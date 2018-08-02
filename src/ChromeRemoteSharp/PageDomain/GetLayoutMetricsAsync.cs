@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Returns metrics relating to the layouting of the page, such as viewport bounds/scale.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#getLayoutMetrics"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getLayoutMetrics"/>
         /// </summary>
 
         /// <returns></returns>

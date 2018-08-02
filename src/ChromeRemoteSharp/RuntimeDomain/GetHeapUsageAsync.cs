@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Returns the JavaScript heap usage. It is the total usage of the corresponding isolate not scoped to a particular Runtime.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#getHeapUsage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getHeapUsage"/>
         /// </summary>
 
         /// <returns></returns>

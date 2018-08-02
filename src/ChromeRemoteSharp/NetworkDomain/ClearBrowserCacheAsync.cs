@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Clears browser cache.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#clearBrowserCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-clearBrowserCache"/>
         /// </summary>
 
         /// <returns></returns>

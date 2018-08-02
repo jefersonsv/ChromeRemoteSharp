@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been enabled until the result of this command is received.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

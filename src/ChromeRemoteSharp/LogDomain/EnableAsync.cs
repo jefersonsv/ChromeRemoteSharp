@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LogDomain
     {
         /// <summary>
         /// Enables log domain, sends the entries collected so far to the client by means of the `entryAdded` notification.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Controls whether page will emit lifecycle events.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setLifecycleEventsEnabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setLifecycleEventsEnabled"/>
         /// </summary>
         /// <param name="enabled">If true, starts emitting lifecycle events.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Returns the DER-encoded certificate.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#getCertificate"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getCertificate"/>
         /// </summary>
         /// <param name="origin">Origin to get certificate for.</param>
         /// <returns></returns>

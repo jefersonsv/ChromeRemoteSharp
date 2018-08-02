@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TracingDomain
     {
         /// <summary>
         /// Start trace events collection.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#start"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-start"/>
         /// </summary>
         /// <param name="categories">Category/tag filter</param>
         /// <param name="options">Tracing options</param>
@@ -19,7 +19,7 @@ namespace ChromeRemoteSharp.TracingDomain
         /// <param name="streamCompression">Compression format to use. This only applies when using `ReturnAsStream` transfer mode (defaults to `none`)</param>
         /// <param name="traceConfig"></param>
         /// <returns></returns>
-        public async Task<JObject> StartAsync(string categories,string options,int? bufferUsageReportingInterval,string transferMode,string streamCompression,string traceConfig)
+        public async Task<JObject> StartAsync(string categories = null, string options = null, int? bufferUsageReportingInterval = null, string transferMode = null, string streamCompression = null, string traceConfig = null)
         {
             return await CommandAsync("start", 
                  new KeyValuePair<string, object>("categories", categories), 

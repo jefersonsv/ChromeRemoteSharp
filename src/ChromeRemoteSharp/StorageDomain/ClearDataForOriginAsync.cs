@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Clears storage for origin.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#clearDataForOrigin"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-clearDataForOrigin"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <param name="storageTypes">Comma separated origin names.</param>
         /// <returns></returns>
-        public async Task<JObject> ClearDataForOriginAsync(string origin,string storageTypes)
+        public async Task<JObject> ClearDataForOriginAsync(string origin, string storageTypes)
         {
             return await CommandAsync("clearDataForOrigin", 
                  new KeyValuePair<string, object>("origin", origin), 

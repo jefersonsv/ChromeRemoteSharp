@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TetheringDomain
     {
         /// <summary>
         /// Request browser port unbinding.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tethering#unbind"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tethering#method-unbind"/>
         /// </summary>
         /// <param name="port">Port number to unbind.</param>
         /// <returns></returns>

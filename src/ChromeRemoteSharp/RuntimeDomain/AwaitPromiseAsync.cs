@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Add handler to promise with given promise object id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#awaitPromise"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-awaitPromise"/>
         /// </summary>
         /// <param name="promiseObjectId">Identifier of the promise.</param>
         /// <param name="returnByValue">Whether the result is expected to be a JSON object that should be sent by value.</param>
         /// <param name="generatePreview">Whether preview should be generated for the result.</param>
         /// <returns></returns>
-        public async Task<JObject> AwaitPromiseAsync(string promiseObjectId,bool? returnByValue,bool? generatePreview)
+        public async Task<JObject> AwaitPromiseAsync(string promiseObjectId, bool? returnByValue = null, bool? generatePreview = null)
         {
             return await CommandAsync("awaitPromise", 
                  new KeyValuePair<string, object>("promiseObjectId", promiseObjectId), 

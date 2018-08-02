@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Evaluates expression on a given call frame.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#evaluateOnCallFrame"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-evaluateOnCallFrame"/>
         /// </summary>
         /// <param name="callFrameId">Call frame identifier to evaluate on.</param>
         /// <param name="expression">Expression to evaluate.</param>
@@ -22,7 +22,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
         /// <param name="throwOnSideEffect">Whether to throw an exception if side effect cannot be ruled out during evaluation.</param>
         /// <param name="timeout">Terminate execution after timing out (number of milliseconds).</param>
         /// <returns></returns>
-        public async Task<JObject> EvaluateOnCallFrameAsync(string callFrameId,string expression,string objectGroup,bool? includeCommandLineAPI,bool? silent,bool? returnByValue,bool? generatePreview,bool? throwOnSideEffect,string timeout)
+        public async Task<JObject> EvaluateOnCallFrameAsync(string callFrameId, string expression, string objectGroup = null, bool? includeCommandLineAPI = null, bool? silent = null, bool? returnByValue = null, bool? generatePreview = null, bool? throwOnSideEffect = null, string timeout = null)
         {
             return await CommandAsync("evaluateOnCallFrame", 
                  new KeyValuePair<string, object>("callFrameId", callFrameId), 

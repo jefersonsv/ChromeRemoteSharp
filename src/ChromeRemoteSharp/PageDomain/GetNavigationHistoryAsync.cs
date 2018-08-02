@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Returns navigation history for the current page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#getNavigationHistory"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-getNavigationHistory"/>
         /// </summary>
 
         /// <returns></returns>

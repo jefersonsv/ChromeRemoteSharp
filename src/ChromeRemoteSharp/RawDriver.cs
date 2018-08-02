@@ -38,7 +38,12 @@ namespace ChromeRemoteSharp
                 var json = JObject.Parse(e.Data);
 
                 if (json["id"] != null)
-                    cmds[long.Parse(json["id"].ToString())] = json;
+                {
+                    if (json["result"] != null)
+                        cmds[long.Parse(json["id"].ToString())] = JObject.FromObject(json["result"]);
+                    else
+                        cmds[long.Parse(json["id"].ToString())] = json;
+                }
                 //else
                 //    Console.WriteLine("Unhadle message: " + json);
             }
@@ -92,10 +97,12 @@ namespace ChromeRemoteSharp
                 JObject param = new JObject();
                 foreach (var item in args)
                 {
-                    param[item.Key] = JToken.FromObject(item.Value);
+                    if (item.Value != null)
+                        param[item.Key] = JToken.FromObject(item.Value);
                 }
 
-                obj["params"] = param;
+                if (param.Count > 0)
+                    obj["params"] = param;
             }
 
             return (currentId, obj.ToString());

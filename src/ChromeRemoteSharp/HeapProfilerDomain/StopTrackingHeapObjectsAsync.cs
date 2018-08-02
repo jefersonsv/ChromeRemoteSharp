@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.HeapProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#stopTrackingHeapObjects"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-stopTrackingHeapObjects"/>
         /// </summary>
         /// <param name="reportProgress">If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken when the tracking is stopped.</param>
         /// <returns></returns>
-        public async Task<JObject> StopTrackingHeapObjectsAsync(bool? reportProgress)
+        public async Task<JObject> StopTrackingHeapObjectsAsync(bool? reportProgress = null)
         {
             return await CommandAsync("stopTrackingHeapObjects", 
                  new KeyValuePair<string, object>("reportProgress", reportProgress)

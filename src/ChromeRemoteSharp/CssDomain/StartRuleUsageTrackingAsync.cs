@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Enables the selector recording.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#startRuleUsageTracking"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-startRuleUsageTracking"/>
         /// </summary>
 
         /// <returns></returns>

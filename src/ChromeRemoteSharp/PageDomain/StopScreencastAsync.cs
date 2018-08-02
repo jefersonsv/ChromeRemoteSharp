@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Stops sending each frame in the `screencastFrame`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#stopScreencast"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-stopScreencast"/>
         /// </summary>
 
         /// <returns></returns>

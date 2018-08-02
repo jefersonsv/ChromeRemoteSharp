@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Searches for given string in resource content.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#searchInResource"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-searchInResource"/>
         /// </summary>
         /// <param name="frameId">Frame id for resource to search in.</param>
         /// <param name="url">URL of the resource to search in.</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.PageDomain
         /// <param name="caseSensitive">If true, search is case sensitive.</param>
         /// <param name="isRegex">If true, treats string parameter as regex.</param>
         /// <returns></returns>
-        public async Task<JObject> SearchInResourceAsync(string frameId,string url,string query,bool? caseSensitive,bool? isRegex)
+        public async Task<JObject> SearchInResourceAsync(string frameId, string url, string query, bool? caseSensitive = null, bool? isRegex = null)
         {
             return await CommandAsync("searchInResource", 
                  new KeyValuePair<string, object>("frameId", frameId), 

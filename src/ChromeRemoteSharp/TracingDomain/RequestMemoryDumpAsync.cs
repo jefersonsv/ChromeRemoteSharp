@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TracingDomain
     {
         /// <summary>
         /// Request a global memory dump.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#requestMemoryDump"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-requestMemoryDump"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Navigates current page to the given history entry.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#navigateToHistoryEntry"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-navigateToHistoryEntry"/>
         /// </summary>
         /// <param name="entryId">Unique id of the entry to navigate to.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Disables reporting of execution contexts creation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

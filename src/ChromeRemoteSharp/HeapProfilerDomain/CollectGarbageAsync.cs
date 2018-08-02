@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.HeapProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#collectGarbage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-collectGarbage"/>
         /// </summary>
 
         /// <returns></returns>

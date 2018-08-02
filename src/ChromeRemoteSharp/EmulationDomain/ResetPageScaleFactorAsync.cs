@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Requests that page scale factor is reset to initial values.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#resetPageScaleFactor"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-resetPageScaleFactor"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Applies specified style edits one after another in the given order.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setStyleTexts"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setStyleTexts"/>
         /// </summary>
         /// <param name="edits"></param>
         /// <returns></returns>

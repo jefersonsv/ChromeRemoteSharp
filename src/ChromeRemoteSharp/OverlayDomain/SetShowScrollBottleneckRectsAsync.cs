@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Requests that backend shows scroll bottleneck rects
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setShowScrollBottleneckRects"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowScrollBottleneckRects"/>
         /// </summary>
         /// <param name="show">True for showing scroll bottleneck rects</param>
         /// <returns></returns>

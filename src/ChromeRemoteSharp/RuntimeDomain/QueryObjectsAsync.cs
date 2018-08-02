@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#queryObjects"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-queryObjects"/>
         /// </summary>
         /// <param name="prototypeObjectId">Identifier of the prototype to return objects for.</param>
         /// <param name="objectGroup">Symbolic group name that can be used to release the results.</param>
         /// <returns></returns>
-        public async Task<JObject> QueryObjectsAsync(string prototypeObjectId,string objectGroup)
+        public async Task<JObject> QueryObjectsAsync(string prototypeObjectId, string objectGroup = null)
         {
             return await CommandAsync("queryObjects", 
                  new KeyValuePair<string, object>("prototypeObjectId", prototypeObjectId), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Sets the requests to intercept that match a the provided patterns and optionally resource types.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setRequestInterception"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setRequestInterception"/>
         /// </summary>
         /// <param name="patterns">Requests matching any of these patterns will be forwarded and wait for the corresponding continueInterceptedRequest call.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Steps out of the function call.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#stepOut"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-stepOut"/>
         /// </summary>
 
         /// <returns></returns>

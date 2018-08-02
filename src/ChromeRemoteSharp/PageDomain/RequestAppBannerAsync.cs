@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#requestAppBanner"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-requestAppBanner"/>
         /// </summary>
 
         /// <returns></returns>

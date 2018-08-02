@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setCookie"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookie"/>
         /// </summary>
         /// <param name="name">Cookie name.</param>
         /// <param name="value">Cookie value.</param>
@@ -22,7 +22,7 @@ namespace ChromeRemoteSharp.NetworkDomain
         /// <param name="sameSite">Cookie SameSite type.</param>
         /// <param name="expires">Cookie expiration date, session cookie if not set</param>
         /// <returns></returns>
-        public async Task<JObject> SetCookieAsync(string name,string value,string url,string domain,string path,bool? secure,bool? httpOnly,string sameSite,string expires)
+        public async Task<JObject> SetCookieAsync(string name, string value, string url = null, string domain = null, string path = null, bool? secure = null, bool? httpOnly = null, string sameSite = null, string expires = null)
         {
             return await CommandAsync("setCookie", 
                  new KeyValuePair<string, object>("name", name), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Dispatches a key event to the page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#dispatchKeyEvent"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-dispatchKeyEvent"/>
         /// </summary>
         /// <param name="type">Type of the key event.</param>
         /// <param name="modifiers">Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8 (default: 0).</param>
@@ -27,7 +27,7 @@ namespace ChromeRemoteSharp.InputDomain
         /// <param name="isSystemKey">Whether the event was a system key event (default: false).</param>
         /// <param name="location">Whether the event was from the left or right side of the keyboard. 1=Left, 2=Right (default: 0).</param>
         /// <returns></returns>
-        public async Task<JObject> DispatchKeyEventAsync(string type,string modifiers,string timestamp,string text,string unmodifiedText,string keyIdentifier,string code,string key,string windowsVirtualKeyCode,string nativeVirtualKeyCode,bool? autoRepeat,bool? isKeypad,bool? isSystemKey,string location)
+        public async Task<JObject> DispatchKeyEventAsync(string type, string modifiers = null, string timestamp = null, string text = null, string unmodifiedText = null, string keyIdentifier = null, string code = null, string key = null, string windowsVirtualKeyCode = null, string nativeVirtualKeyCode = null, bool? autoRepeat = null, bool? isKeypad = null, bool? isSystemKey = null, string location = null)
         {
             return await CommandAsync("dispatchKeyEvent", 
                  new KeyValuePair<string, object>("type", type), 

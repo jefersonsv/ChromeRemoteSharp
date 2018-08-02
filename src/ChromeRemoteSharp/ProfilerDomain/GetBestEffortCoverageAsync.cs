@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Collect coverage data for the current isolate. The coverage data may be incomplete due to garbage collection.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#getBestEffortCoverage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-getBestEffortCoverage"/>
         /// </summary>
 
         /// <returns></returns>

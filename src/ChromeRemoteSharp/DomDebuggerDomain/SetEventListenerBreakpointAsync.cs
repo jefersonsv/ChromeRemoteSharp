@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Sets breakpoint on particular DOM event.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#setEventListenerBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setEventListenerBreakpoint"/>
         /// </summary>
         /// <param name="eventName">DOM Event name to stop on (any DOM event will do).</param>
         /// <param name="targetName">EventTarget interface name to stop on. If equal to `"*"` or not provided, will stop on any EventTarget.</param>
         /// <returns></returns>
-        public async Task<JObject> SetEventListenerBreakpointAsync(string eventName,string targetName)
+        public async Task<JObject> SetEventListenerBreakpointAsync(string eventName, string targetName = null)
         {
             return await CommandAsync("setEventListenerBreakpoint", 
                  new KeyValuePair<string, object>("eventName", eventName), 

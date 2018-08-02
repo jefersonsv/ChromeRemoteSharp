@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// This method does not remove binding function from global object but unsubscribes current runtime agent from Runtime.bindingCalled notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#removeBinding"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-removeBinding"/>
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>

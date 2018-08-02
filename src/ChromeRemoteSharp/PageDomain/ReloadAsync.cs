@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Reloads given page optionally ignoring the cache.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#reload"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-reload"/>
         /// </summary>
         /// <param name="ignoreCache">If true, browser cache is ignored (as if the user pressed Shift+refresh).</param>
         /// <param name="scriptToEvaluateOnLoad">If set, the script will be injected into all frames of the inspected page after reload. Argument will be ignored if reloading dataURL origin.</param>
         /// <returns></returns>
-        public async Task<JObject> ReloadAsync(bool? ignoreCache,string scriptToEvaluateOnLoad)
+        public async Task<JObject> ReloadAsync(bool? ignoreCache = null, string scriptToEvaluateOnLoad = null)
         {
             return await CommandAsync("reload", 
                  new KeyValuePair<string, object>("ignoreCache", ignoreCache), 

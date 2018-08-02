@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.IODomain
     {
         /// <summary>
         /// Close the stream, discard any temporary backing storage.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IO#close"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-close"/>
         /// </summary>
         /// <param name="handle">Handle of the stream to close.</param>
         /// <returns></returns>

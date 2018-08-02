@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Brings page to front (activates tab).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#bringToFront"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-bringToFront"/>
         /// </summary>
 
         /// <returns></returns>

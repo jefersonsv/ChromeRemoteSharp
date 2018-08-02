@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ServiceWorkerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#skipWaiting"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#method-skipWaiting"/>
         /// </summary>
         /// <param name="scopeURL"></param>
         /// <returns></returns>

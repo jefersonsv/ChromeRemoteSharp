@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomStorageDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomStorage#removeDOMStorageItem"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMStorage#method-removeDOMStorageItem"/>
         /// </summary>
         /// <param name="storageId"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        public async Task<JObject> RemoveDOMStorageItemAsync(string storageId,string key)
+        public async Task<JObject> RemoveDOMStorageItemAsync(string storageId, string key)
         {
             return await CommandAsync("removeDOMStorageItem", 
                  new KeyValuePair<string, object>("storageId", storageId), 

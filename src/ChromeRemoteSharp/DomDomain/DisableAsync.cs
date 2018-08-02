@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Disables DOM agent for the given page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

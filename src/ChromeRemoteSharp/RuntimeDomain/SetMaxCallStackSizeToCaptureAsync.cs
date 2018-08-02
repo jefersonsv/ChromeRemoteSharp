@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#setMaxCallStackSizeToCapture"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-setMaxCallStackSizeToCapture"/>
         /// </summary>
         /// <param name="size"></param>
         /// <returns></returns>

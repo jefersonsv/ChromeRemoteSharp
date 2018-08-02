@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setDocumentCookieDisabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setDocumentCookieDisabled"/>
         /// </summary>
         /// <param name="disabled">Whether document.coookie API should be disabled.</param>
         /// <returns></returns>

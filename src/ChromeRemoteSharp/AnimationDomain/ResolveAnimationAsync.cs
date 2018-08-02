@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Gets the remote object of the Animation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#resolveAnimation"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-resolveAnimation"/>
         /// </summary>
         /// <param name="animationId">Animation id.</param>
         /// <returns></returns>

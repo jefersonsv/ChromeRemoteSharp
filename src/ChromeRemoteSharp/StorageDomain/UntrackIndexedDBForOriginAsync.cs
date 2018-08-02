@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Unregisters origin from receiving notifications for IndexedDB.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#untrackIndexedDBForOrigin"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-untrackIndexedDBForOrigin"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <returns></returns>

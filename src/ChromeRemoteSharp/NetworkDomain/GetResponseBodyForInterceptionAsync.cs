@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Returns content served for the given currently intercepted request.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#getResponseBodyForInterception"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBodyForInterception"/>
         /// </summary>
         /// <param name="interceptionId">Identifier for the intercepted request to get body for.</param>
         /// <returns></returns>

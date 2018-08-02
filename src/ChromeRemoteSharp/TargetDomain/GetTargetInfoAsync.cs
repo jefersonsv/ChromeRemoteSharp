@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Returns information about a target.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#getTargetInfo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getTargetInfo"/>
         /// </summary>
         /// <param name="targetId"></param>
         /// <returns></returns>
-        public async Task<JObject> GetTargetInfoAsync(string targetId)
+        public async Task<JObject> GetTargetInfoAsync(string targetId = null)
         {
             return await CommandAsync("getTargetInfo", 
                  new KeyValuePair<string, object>("targetId", targetId)

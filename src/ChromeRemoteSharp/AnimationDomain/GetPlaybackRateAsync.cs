@@ -10,8 +10,9 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Gets the playback rate of the document timeline.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#getPlaybackRate"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-getPlaybackRate"/>
         /// </summary>
+
         /// <returns></returns>
         public async Task<JObject> GetPlaybackRateAsync()
         {

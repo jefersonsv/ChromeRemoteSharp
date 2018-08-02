@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Clears the overriden Geolocation Position and Error.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#clearGeolocationOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-clearGeolocationOverride"/>
         /// </summary>
 
         /// <returns></returns>

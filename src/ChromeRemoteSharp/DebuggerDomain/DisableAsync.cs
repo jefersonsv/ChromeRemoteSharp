@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Disables debugger for given page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

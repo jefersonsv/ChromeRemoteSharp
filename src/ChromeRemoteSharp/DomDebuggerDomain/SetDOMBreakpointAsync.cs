@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Sets breakpoint on particular operation with DOM.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#setDOMBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setDOMBreakpoint"/>
         /// </summary>
         /// <param name="nodeId">Identifier of the node to set breakpoint on.</param>
         /// <param name="type">Type of the operation to stop upon.</param>
         /// <returns></returns>
-        public async Task<JObject> SetDOMBreakpointAsync(string nodeId,string type)
+        public async Task<JObject> SetDOMBreakpointAsync(int nodeId, string type)
         {
             return await CommandAsync("setDOMBreakpoint", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

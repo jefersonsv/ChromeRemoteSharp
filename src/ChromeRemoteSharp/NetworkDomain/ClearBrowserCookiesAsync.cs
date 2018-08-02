@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Clears browser cookies.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#clearBrowserCookies"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-clearBrowserCookies"/>
         /// </summary>
 
         /// <returns></returns>

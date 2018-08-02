@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#pauseOnAsyncCall"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-pauseOnAsyncCall"/>
         /// </summary>
         /// <param name="parentStackTraceId">Debugger will pause when async call with given stack trace is started.</param>
         /// <returns></returns>

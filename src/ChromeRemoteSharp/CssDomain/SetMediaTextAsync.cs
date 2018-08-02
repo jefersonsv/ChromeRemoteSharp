@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Modifies the rule selector.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setMediaText"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setMediaText"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <param name="range"></param>
         /// <param name="text"></param>
         /// <returns></returns>
-        public async Task<JObject> SetMediaTextAsync(string styleSheetId,string range,string text)
+        public async Task<JObject> SetMediaTextAsync(string styleSheetId, string range, string text)
         {
             return await CommandAsync("setMediaText", 
                  new KeyValuePair<string, object>("styleSheetId", styleSheetId), 

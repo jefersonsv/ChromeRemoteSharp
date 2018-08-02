@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Returns iframe node that owns iframe with the given domain.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#getFrameOwner"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getFrameOwner"/>
         /// </summary>
         /// <param name="frameId"></param>
         /// <returns></returns>

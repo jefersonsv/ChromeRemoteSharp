@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Tells whether clearing browser cookies is supported.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#canClearBrowserCookies"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canClearBrowserCookies"/>
         /// </summary>
 
         /// <returns></returns>

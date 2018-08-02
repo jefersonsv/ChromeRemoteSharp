@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// For testing.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setDataSizeLimitsForTest"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setDataSizeLimitsForTest"/>
         /// </summary>
         /// <param name="maxTotalSize">Maximum total buffer size.</param>
         /// <param name="maxResourceSize">Maximum per-resource size.</param>
         /// <returns></returns>
-        public async Task<JObject> SetDataSizeLimitsForTestAsync(string maxTotalSize,string maxResourceSize)
+        public async Task<JObject> SetDataSizeLimitsForTestAsync(string maxTotalSize, string maxResourceSize)
         {
             return await CommandAsync("setDataSizeLimitsForTest", 
                  new KeyValuePair<string, object>("maxTotalSize", maxTotalSize), 

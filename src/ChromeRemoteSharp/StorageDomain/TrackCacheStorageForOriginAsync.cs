@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Registers origin to be notified when an update occurs to its cache storage list.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#trackCacheStorageForOrigin"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-trackCacheStorageForOrigin"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <returns></returns>

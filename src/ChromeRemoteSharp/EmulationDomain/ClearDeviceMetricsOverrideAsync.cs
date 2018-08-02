@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Clears the overriden device metrics.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#clearDeviceMetricsOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-clearDeviceMetricsOverride"/>
         /// </summary>
 
         /// <returns></returns>

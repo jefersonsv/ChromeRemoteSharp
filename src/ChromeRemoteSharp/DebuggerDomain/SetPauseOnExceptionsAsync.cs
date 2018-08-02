@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is `none`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setPauseOnExceptions"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setPauseOnExceptions"/>
         /// </summary>
         /// <param name="state">Pause on exceptions mode.</param>
         /// <returns></returns>

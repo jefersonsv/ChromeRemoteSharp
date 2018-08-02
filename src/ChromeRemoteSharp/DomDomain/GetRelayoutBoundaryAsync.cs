@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Returns the id of the nearest ancestor that is a relayout boundary.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#getRelayoutBoundary"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getRelayoutBoundary"/>
         /// </summary>
         /// <param name="nodeId">Id of the node.</param>
         /// <returns></returns>
-        public async Task<JObject> GetRelayoutBoundaryAsync(string nodeId)
+        public async Task<JObject> GetRelayoutBoundaryAsync(int nodeId)
         {
             return await CommandAsync("getRelayoutBoundary", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

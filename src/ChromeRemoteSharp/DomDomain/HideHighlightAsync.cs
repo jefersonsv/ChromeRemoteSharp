@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Hides any highlight.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#hideHighlight"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-hideHighlight"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Detaches session with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#detachFromTarget"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-detachFromTarget"/>
         /// </summary>
         /// <param name="sessionId">Session to detach.</param>
         /// <param name="targetId">Deprecated.</param>
         /// <returns></returns>
-        public async Task<JObject> DetachFromTargetAsync(string sessionId,string targetId)
+        public async Task<JObject> DetachFromTargetAsync(string sessionId = null, string targetId = null)
         {
             return await CommandAsync("detachFromTarget", 
                  new KeyValuePair<string, object>("sessionId", sessionId), 

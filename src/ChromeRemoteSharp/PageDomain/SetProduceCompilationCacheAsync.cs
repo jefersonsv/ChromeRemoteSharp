@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Forces compilation cache to be generated for every subresource script.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setProduceCompilationCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setProduceCompilationCache"/>
         /// </summary>
         /// <param name="enabled"></param>
         /// <returns></returns>

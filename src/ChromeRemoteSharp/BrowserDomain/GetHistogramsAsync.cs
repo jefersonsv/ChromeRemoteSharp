@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.BrowserDomain
     {
         /// <summary>
         /// Get Chrome histograms.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#getHistograms"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getHistograms"/>
         /// </summary>
         /// <param name="query">Requested substring in name. Only histograms which have query as a substring in their name are extracted. An empty or absent query returns all histograms.</param>
         /// <param name="delta">If true, retrieve delta since last call.</param>
         /// <returns></returns>
-        public async Task<JObject> GetHistogramsAsync(string query,bool? delta)
+        public async Task<JObject> GetHistogramsAsync(string query = null, bool? delta = null)
         {
             return await CommandAsync("getHistograms", 
                  new KeyValuePair<string, object>("query", query), 

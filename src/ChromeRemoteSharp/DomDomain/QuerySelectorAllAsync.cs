@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Executes `querySelectorAll` on a given node.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#querySelectorAll"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-querySelectorAll"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to query upon.</param>
         /// <param name="selector">Selector string.</param>
         /// <returns></returns>
-        public async Task<JObject> QuerySelectorAllAsync(string nodeId,string selector)
+        public async Task<JObject> QuerySelectorAllAsync(int nodeId, string selector)
         {
             return await CommandAsync("querySelectorAll", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

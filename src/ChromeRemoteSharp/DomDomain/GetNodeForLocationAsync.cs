@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Returns node id at given location.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#getNodeForLocation"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getNodeForLocation"/>
         /// </summary>
         /// <param name="x">X coordinate.</param>
         /// <param name="y">Y coordinate.</param>
         /// <param name="includeUserAgentShadowDOM">False to skip to the nearest non-UA shadow root ancestor (default: false).</param>
         /// <returns></returns>
-        public async Task<JObject> GetNodeForLocationAsync(string x,string y,bool? includeUserAgentShadowDOM)
+        public async Task<JObject> GetNodeForLocationAsync(string x, string y, bool? includeUserAgentShadowDOM = null)
         {
             return await CommandAsync("getNodeForLocation", 
                  new KeyValuePair<string, object>("x", x), 

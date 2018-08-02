@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.IODomain
     {
         /// <summary>
         /// Return UUID of Blob object specified by a remote object id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IO#resolveBlob"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IO#method-resolveBlob"/>
         /// </summary>
         /// <param name="objectId">Object id of a Blob object wrapper.</param>
         /// <returns></returns>

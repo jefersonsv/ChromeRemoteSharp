@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Creates a new empty BrowserContext. Similar to an incognito profile but you can have more than one.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#createBrowserContext"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-createBrowserContext"/>
         /// </summary>
 
         /// <returns></returns>

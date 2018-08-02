@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Sets node value for a node with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#setNodeValue"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-setNodeValue"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to set value for.</param>
         /// <param name="value">New node's value.</param>
         /// <returns></returns>
-        public async Task<JObject> SetNodeValueAsync(string nodeId,string value)
+        public async Task<JObject> SetNodeValueAsync(int nodeId, string value)
         {
             return await CommandAsync("setNodeValue", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

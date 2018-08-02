@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.IndexedDBDomain
     {
         /// <summary>
         /// Enables events from backend.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

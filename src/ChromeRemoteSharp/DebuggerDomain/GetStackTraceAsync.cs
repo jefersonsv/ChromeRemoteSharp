@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Returns stack trace with given `stackTraceId`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#getStackTrace"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-getStackTrace"/>
         /// </summary>
         /// <param name="stackTraceId"></param>
         /// <returns></returns>

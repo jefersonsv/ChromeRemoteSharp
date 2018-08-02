@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DatabaseDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#executeSQL"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-executeSQL"/>
         /// </summary>
         /// <param name="databaseId"></param>
         /// <param name="query"></param>
         /// <returns></returns>
-        public async Task<JObject> ExecuteSQLAsync(string databaseId,string query)
+        public async Task<JObject> ExecuteSQLAsync(string databaseId, string query)
         {
             return await CommandAsync("executeSQL", 
                  new KeyValuePair<string, object>("databaseId", databaseId), 

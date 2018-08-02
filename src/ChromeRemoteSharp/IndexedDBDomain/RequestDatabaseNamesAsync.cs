@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.IndexedDBDomain
     {
         /// <summary>
         /// Requests database names for given security origin.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#requestDatabaseNames"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestDatabaseNames"/>
         /// </summary>
         /// <param name="securityOrigin">Security origin.</param>
         /// <returns></returns>

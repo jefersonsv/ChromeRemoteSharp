@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// Retrieve native memory allocations profile collected since browser process startup.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#getBrowserSamplingProfile"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getBrowserSamplingProfile"/>
         /// </summary>
 
         /// <returns></returns>

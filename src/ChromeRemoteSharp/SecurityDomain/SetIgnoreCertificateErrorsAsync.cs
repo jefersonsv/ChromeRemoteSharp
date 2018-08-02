@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.SecurityDomain
     {
         /// <summary>
         /// Enable/disable whether all certificate errors should be ignored.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#setIgnoreCertificateErrors"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-setIgnoreCertificateErrors"/>
         /// </summary>
         /// <param name="ignore">If true, all certificate errors will be ignored.</param>
         /// <returns></returns>

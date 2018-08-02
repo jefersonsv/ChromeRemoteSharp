@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setScrollbarsHidden"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setScrollbarsHidden"/>
         /// </summary>
         /// <param name="hidden">Whether scrollbars should be always hidden.</param>
         /// <returns></returns>

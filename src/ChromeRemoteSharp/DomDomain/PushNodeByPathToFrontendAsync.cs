@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Requests that the node is sent to the caller given its path. // FIXME, use XPath
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#pushNodeByPathToFrontend"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodeByPathToFrontend"/>
         /// </summary>
         /// <param name="path">Path to node in the proprietary format.</param>
         /// <returns></returns>

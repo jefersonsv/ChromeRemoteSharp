@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Terminate current or next JavaScript execution. Will cancel the termination when the outer-most script execution ends.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#terminateExecution"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-terminateExecution"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomStorageDomain
     {
         /// <summary>
         /// Disables storage tracking, prevents storage events from being sent to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomStorage#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMStorage#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

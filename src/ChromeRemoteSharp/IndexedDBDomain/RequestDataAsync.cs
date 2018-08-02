@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.IndexedDBDomain
     {
         /// <summary>
         /// Requests data from object store or index.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#requestData"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-requestData"/>
         /// </summary>
         /// <param name="securityOrigin">Security origin.</param>
         /// <param name="databaseName">Database name.</param>
@@ -20,7 +20,7 @@ namespace ChromeRemoteSharp.IndexedDBDomain
         /// <param name="pageSize">Number of records to fetch.</param>
         /// <param name="keyRange">Key range.</param>
         /// <returns></returns>
-        public async Task<JObject> RequestDataAsync(string securityOrigin,string databaseName,string objectStoreName,string indexName,string skipCount,string pageSize,string keyRange)
+        public async Task<JObject> RequestDataAsync(string securityOrigin, string databaseName, string objectStoreName, string indexName, string skipCount, string pageSize, string keyRange = null)
         {
             return await CommandAsync("requestData", 
                  new KeyValuePair<string, object>("securityOrigin", securityOrigin), 

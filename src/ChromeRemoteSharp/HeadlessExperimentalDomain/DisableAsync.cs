@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.HeadlessExperimentalDomain
     {
         /// <summary>
         /// Disables headless events for the target.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeadlessExperimental#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

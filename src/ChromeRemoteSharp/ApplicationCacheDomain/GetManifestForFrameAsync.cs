@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ApplicationCacheDomain
     {
         /// <summary>
         /// Returns manifest URL for document in the given frame.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#getManifestForFrame"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getManifestForFrame"/>
         /// </summary>
         /// <param name="frameId">Identifier of the frame containing document whose manifest is retrieved.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Discards collected exceptions and console API calls.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#discardConsoleEntries"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-discardConsoleEntries"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#setCustomObjectFormatterEnabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-setCustomObjectFormatterEnabled"/>
         /// </summary>
         /// <param name="enabled"></param>
         /// <returns></returns>

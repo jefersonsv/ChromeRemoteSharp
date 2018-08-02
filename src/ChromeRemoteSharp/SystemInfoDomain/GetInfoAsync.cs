@@ -10,8 +10,9 @@ namespace ChromeRemoteSharp.SystemInfoDomain
     {
         /// <summary>
         /// Returns information about the system.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#getInfo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/SystemInfo#method-getInfo"/>
         /// </summary>
+
         /// <returns></returns>
         public async Task<JObject> GetInfoAsync()
         {

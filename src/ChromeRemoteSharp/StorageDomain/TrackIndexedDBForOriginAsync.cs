@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Registers origin to be notified when an update occurs to its IndexedDB.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#trackIndexedDBForOrigin"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-trackIndexedDBForOrigin"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Requests that backend shows paint rectangles
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setShowPaintRects"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowPaintRects"/>
         /// </summary>
         /// <param name="result">True for showing paint rectangles</param>
         /// <returns></returns>

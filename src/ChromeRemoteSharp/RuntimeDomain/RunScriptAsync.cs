@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Runs script with given id in a given context.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#runScript"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runScript"/>
         /// </summary>
         /// <param name="scriptId">Id of the script to run.</param>
         /// <param name="executionContextId">Specifies in which execution context to perform script run. If the parameter is omitted the evaluation will be performed in the context of the inspected page.</param>
@@ -21,7 +21,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
         /// <param name="generatePreview">Whether preview should be generated for the result.</param>
         /// <param name="awaitPromise">Whether execution should `await` for resulting value and return once awaited promise is resolved.</param>
         /// <returns></returns>
-        public async Task<JObject> RunScriptAsync(string scriptId,string executionContextId,string objectGroup,bool? silent,bool? includeCommandLineAPI,bool? returnByValue,bool? generatePreview,bool? awaitPromise)
+        public async Task<JObject> RunScriptAsync(string scriptId, string executionContextId = null, string objectGroup = null, bool? silent = null, bool? includeCommandLineAPI = null, bool? returnByValue = null, bool? generatePreview = null, bool? awaitPromise = null)
         {
             return await CommandAsync("runScript", 
                  new KeyValuePair<string, object>("scriptId", scriptId), 

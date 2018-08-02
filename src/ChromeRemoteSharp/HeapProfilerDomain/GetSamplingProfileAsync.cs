@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.HeapProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#getSamplingProfile"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getSamplingProfile"/>
         /// </summary>
 
         /// <returns></returns>

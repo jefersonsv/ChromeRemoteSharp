@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ServiceWorkerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#stopWorker"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#method-stopWorker"/>
         /// </summary>
         /// <param name="versionId"></param>
         /// <returns></returns>

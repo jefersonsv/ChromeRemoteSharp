@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TracingDomain
     {
         /// <summary>
         /// Stop trace events collection.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#end"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-end"/>
         /// </summary>
 
         /// <returns></returns>

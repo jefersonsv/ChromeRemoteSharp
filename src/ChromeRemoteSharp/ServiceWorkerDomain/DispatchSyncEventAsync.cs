@@ -10,14 +10,14 @@ namespace ChromeRemoteSharp.ServiceWorkerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#dispatchSyncEvent"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ServiceWorker#method-dispatchSyncEvent"/>
         /// </summary>
         /// <param name="origin"></param>
         /// <param name="registrationId"></param>
         /// <param name="tag"></param>
         /// <param name="lastChance"></param>
         /// <returns></returns>
-        public async Task<JObject> DispatchSyncEventAsync(string origin,string registrationId,string tag,bool lastChance)
+        public async Task<JObject> DispatchSyncEventAsync(string origin, string registrationId, string tag, bool lastChance)
         {
             return await CommandAsync("dispatchSyncEvent", 
                  new KeyValuePair<string, object>("origin", origin), 

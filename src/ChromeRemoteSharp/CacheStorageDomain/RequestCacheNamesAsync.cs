@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CacheStorageDomain
     {
         /// <summary>
         /// Requests cache names.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#requestCacheNames"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-requestCacheNames"/>
         /// </summary>
         /// <param name="securityOrigin">Security origin.</param>
         /// <returns></returns>

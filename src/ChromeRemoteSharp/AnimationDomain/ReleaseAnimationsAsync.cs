@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Releases a set of animations to no longer be manipulated.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#releaseAnimations"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-releaseAnimations"/>
         /// </summary>
         /// <param name="animations">List of animation ids to seek.</param>
         /// <returns></returns>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.AnimationDomain
         {
             return await CommandAsync("releaseAnimations", 
                  new KeyValuePair<string, object>("animations", animations)
-            );
+                 );
         }
     }
 }

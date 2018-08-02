@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Clears seeded compilation cache.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#clearCompilationCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-clearCompilationCache"/>
         /// </summary>
 
         /// <returns></returns>

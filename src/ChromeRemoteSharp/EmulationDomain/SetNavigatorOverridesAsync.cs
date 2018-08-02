@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Overrides value returned by the javascript navigator object.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setNavigatorOverrides"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setNavigatorOverrides"/>
         /// </summary>
         /// <param name="platform">The platform navigator.platform should return.</param>
         /// <returns></returns>

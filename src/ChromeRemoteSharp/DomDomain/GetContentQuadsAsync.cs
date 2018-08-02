@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Returns quads that describe node position on the page. This method might return multiple quads for inline nodes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#getContentQuads"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getContentQuads"/>
         /// </summary>
         /// <param name="nodeId">Identifier of the node.</param>
         /// <param name="backendNodeId">Identifier of the backend node.</param>
         /// <param name="objectId">JavaScript object id of the node wrapper.</param>
         /// <returns></returns>
-        public async Task<JObject> GetContentQuadsAsync(string nodeId,string backendNodeId,string objectId)
+        public async Task<JObject> GetContentQuadsAsync(int nodeId, string backendNodeId = null, string objectId = null)
         {
             return await CommandAsync("getContentQuads", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

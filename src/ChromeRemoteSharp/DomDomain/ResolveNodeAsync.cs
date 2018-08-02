@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Resolves the JavaScript node object for a given NodeId or BackendNodeId.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#resolveNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-resolveNode"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to resolve.</param>
         /// <param name="backendNodeId">Backend identifier of the node to resolve.</param>
         /// <param name="objectGroup">Symbolic group name that can be used to release multiple objects.</param>
         /// <returns></returns>
-        public async Task<JObject> ResolveNodeAsync(string nodeId,string backendNodeId,string objectGroup)
+        public async Task<JObject> ResolveNodeAsync(int nodeId, string backendNodeId = null, string objectGroup = null)
         {
             return await CommandAsync("resolveNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

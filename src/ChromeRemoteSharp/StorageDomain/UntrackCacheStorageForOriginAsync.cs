@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Unregisters origin from receiving notifications for cache storage.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#untrackCacheStorageForOrigin"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-untrackCacheStorageForOrigin"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <returns></returns>

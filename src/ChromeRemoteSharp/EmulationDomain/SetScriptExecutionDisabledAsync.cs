@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Switches script execution in the page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setScriptExecutionDisabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setScriptExecutionDisabled"/>
         /// </summary>
         /// <param name="value">Whether script execution should be disabled in the page.</param>
         /// <returns></returns>

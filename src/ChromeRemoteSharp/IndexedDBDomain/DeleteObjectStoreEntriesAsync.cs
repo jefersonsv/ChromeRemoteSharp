@@ -10,14 +10,14 @@ namespace ChromeRemoteSharp.IndexedDBDomain
     {
         /// <summary>
         /// Delete a range of entries from an object store
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#deleteObjectStoreEntries"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-deleteObjectStoreEntries"/>
         /// </summary>
         /// <param name="securityOrigin"></param>
         /// <param name="databaseName"></param>
         /// <param name="objectStoreName"></param>
         /// <param name="keyRange">Range of entry keys to delete</param>
         /// <returns></returns>
-        public async Task<JObject> DeleteObjectStoreEntriesAsync(string securityOrigin,string databaseName,string objectStoreName,string keyRange)
+        public async Task<JObject> DeleteObjectStoreEntriesAsync(string securityOrigin, string databaseName, string objectStoreName, string keyRange)
         {
             return await CommandAsync("deleteObjectStoreEntries", 
                  new KeyValuePair<string, object>("securityOrigin", securityOrigin), 

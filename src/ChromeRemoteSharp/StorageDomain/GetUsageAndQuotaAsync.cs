@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.StorageDomain
     {
         /// <summary>
         /// Returns usage and quota in bytes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#getUsageAndQuota"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Storage#method-getUsageAndQuota"/>
         /// </summary>
         /// <param name="origin">Security origin.</param>
         /// <returns></returns>

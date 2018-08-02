@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Steps into the function call.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#stepInto"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-stepInto"/>
         /// </summary>
         /// <param name="breakOnAsyncCall">Debugger will issue additional Debugger.paused notification if any async task is scheduled before next pause.</param>
         /// <returns></returns>
-        public async Task<JObject> StepIntoAsync(bool? breakOnAsyncCall)
+        public async Task<JObject> StepIntoAsync(bool? breakOnAsyncCall = null)
         {
             return await CommandAsync("stepInto", 
                  new KeyValuePair<string, object>("breakOnAsyncCall", breakOnAsyncCall)

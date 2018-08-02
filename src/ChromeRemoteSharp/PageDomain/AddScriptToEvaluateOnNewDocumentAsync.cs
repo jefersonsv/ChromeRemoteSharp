@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Evaluates given script in every frame upon creation (before loading frame's scripts).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#addScriptToEvaluateOnNewDocument"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnNewDocument"/>
         /// </summary>
         /// <param name="source"></param>
         /// <returns></returns>

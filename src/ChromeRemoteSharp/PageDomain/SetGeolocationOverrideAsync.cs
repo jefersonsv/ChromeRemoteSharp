@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position unavailable.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setGeolocationOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setGeolocationOverride"/>
         /// </summary>
         /// <param name="latitude">Mock latitude</param>
         /// <param name="longitude">Mock longitude</param>
         /// <param name="accuracy">Mock accuracy</param>
         /// <returns></returns>
-        public async Task<JObject> SetGeolocationOverrideAsync(int? latitude,int? longitude,int? accuracy)
+        public async Task<JObject> SetGeolocationOverrideAsync(int? latitude = null, int? longitude = null, int? accuracy = null)
         {
             return await CommandAsync("setGeolocationOverride", 
                  new KeyValuePair<string, object>("latitude", latitude), 

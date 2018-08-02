@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Modifies the keyframe rule key text.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#setKeyframeKey"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-setKeyframeKey"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <param name="range"></param>
         /// <param name="keyText"></param>
         /// <returns></returns>
-        public async Task<JObject> SetKeyframeKeyAsync(string styleSheetId,string range,string keyText)
+        public async Task<JObject> SetKeyframeKeyAsync(string styleSheetId, string range, string keyText)
         {
             return await CommandAsync("setKeyframeKey", 
                  new KeyValuePair<string, object>("styleSheetId", styleSheetId), 

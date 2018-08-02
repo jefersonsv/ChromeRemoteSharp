@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Activates / deactivates all breakpoints on the page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setBreakpointsActive"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointsActive"/>
         /// </summary>
         /// <param name="active">New value for breakpoints active state.</param>
         /// <returns></returns>

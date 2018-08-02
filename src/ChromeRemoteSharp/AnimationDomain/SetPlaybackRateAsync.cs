@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Sets the playback rate of the document timeline.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#setPlaybackRate"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-setPlaybackRate"/>
         /// </summary>
         /// <param name="playbackRate">Playback rate for animations on page</param>
         /// <returns></returns>

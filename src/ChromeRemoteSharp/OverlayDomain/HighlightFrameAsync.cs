@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Highlights owner element of the frame with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#highlightFrame"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightFrame"/>
         /// </summary>
         /// <param name="frameId">Identifier of the frame to highlight.</param>
         /// <param name="contentColor">The content box highlight fill color (default: transparent).</param>
         /// <param name="contentOutlineColor">The content box highlight outline color (default: transparent).</param>
         /// <returns></returns>
-        public async Task<JObject> HighlightFrameAsync(string frameId,string contentColor,string contentOutlineColor)
+        public async Task<JObject> HighlightFrameAsync(string frameId, string contentColor = null, string contentOutlineColor = null)
         {
             return await CommandAsync("highlightFrame", 
                  new KeyValuePair<string, object>("frameId", frameId), 

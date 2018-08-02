@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Activates emulation of network conditions.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#emulateNetworkConditions"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-emulateNetworkConditions"/>
         /// </summary>
         /// <param name="offline">True to emulate internet disconnection.</param>
         /// <param name="latency">Minimum latency from request sent to response headers received (ms).</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.NetworkDomain
         /// <param name="uploadThroughput">Maximal aggregated upload throughput (bytes/sec).  -1 disables upload throttling.</param>
         /// <param name="connectionType">Connection type if known.</param>
         /// <returns></returns>
-        public async Task<JObject> EmulateNetworkConditionsAsync(bool offline,int latency,int downloadThroughput,int uploadThroughput,string connectionType)
+        public async Task<JObject> EmulateNetworkConditionsAsync(bool offline, int latency, int downloadThroughput, int uploadThroughput, string connectionType = null)
         {
             return await CommandAsync("emulateNetworkConditions", 
                  new KeyValuePair<string, object>("offline", offline), 

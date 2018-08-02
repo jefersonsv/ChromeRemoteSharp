@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Changes return value in top frame. Available only at return break position.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setReturnValue"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setReturnValue"/>
         /// </summary>
         /// <param name="newValue">New return value.</param>
         /// <returns></returns>

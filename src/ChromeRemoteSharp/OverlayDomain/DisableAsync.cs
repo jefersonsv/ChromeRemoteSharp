@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Disables domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

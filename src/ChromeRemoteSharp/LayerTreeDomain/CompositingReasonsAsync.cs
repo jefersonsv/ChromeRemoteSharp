@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LayerTreeDomain
     {
         /// <summary>
         /// Provides the reasons why the given layer was composited.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#compositingReasons"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#method-compositingReasons"/>
         /// </summary>
         /// <param name="layerId">The id of the layer for which we want to get the reasons it was composited.</param>
         /// <returns></returns>

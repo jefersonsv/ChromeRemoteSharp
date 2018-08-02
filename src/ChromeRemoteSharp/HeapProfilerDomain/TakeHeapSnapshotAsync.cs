@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.HeapProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#takeHeapSnapshot"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-takeHeapSnapshot"/>
         /// </summary>
         /// <param name="reportProgress">If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken.</param>
         /// <returns></returns>
-        public async Task<JObject> TakeHeapSnapshotAsync(bool? reportProgress)
+        public async Task<JObject> TakeHeapSnapshotAsync(bool? reportProgress = null)
         {
             return await CommandAsync("takeHeapSnapshot", 
                  new KeyValuePair<string, object>("reportProgress", reportProgress)

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#start"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-start"/>
         /// </summary>
 
         /// <returns></returns>

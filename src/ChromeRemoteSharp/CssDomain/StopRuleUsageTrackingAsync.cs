@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Stop tracking rule usage and return the list of rules that were used since last call to `takeCoverageDelta` (or since start of coverage instrumentation)
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#stopRuleUsageTracking"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-stopRuleUsageTracking"/>
         /// </summary>
 
         /// <returns></returns>

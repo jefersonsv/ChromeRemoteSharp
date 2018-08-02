@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Evaluates expression on global object.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#evaluate"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-evaluate"/>
         /// </summary>
         /// <param name="expression">Expression to evaluate.</param>
         /// <param name="objectGroup">Symbolic group name that can be used to release multiple objects.</param>
@@ -24,7 +24,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
         /// <param name="throwOnSideEffect">Whether to throw an exception if side effect cannot be ruled out during evaluation.</param>
         /// <param name="timeout">Terminate execution after timing out (number of milliseconds).</param>
         /// <returns></returns>
-        public async Task<JObject> EvaluateAsync(string expression,string objectGroup,bool? includeCommandLineAPI,bool? silent,string contextId,bool? returnByValue,bool? generatePreview,bool? userGesture,bool? awaitPromise,bool? throwOnSideEffect,string timeout)
+        public async Task<JObject> EvaluateAsync(string expression, string objectGroup = null, bool? includeCommandLineAPI = null, bool? silent = null, string contextId = null, bool? returnByValue = null, bool? generatePreview = null, bool? userGesture = null, bool? awaitPromise = null, bool? throwOnSideEffect = null, string timeout = null)
         {
             return await CommandAsync("evaluate", 
                  new KeyValuePair<string, object>("expression", expression), 

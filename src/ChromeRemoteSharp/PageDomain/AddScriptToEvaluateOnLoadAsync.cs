@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Deprecated, please use addScriptToEvaluateOnNewDocument instead.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#addScriptToEvaluateOnLoad"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addScriptToEvaluateOnLoad"/>
         /// </summary>
         /// <param name="scriptSource"></param>
         /// <returns></returns>

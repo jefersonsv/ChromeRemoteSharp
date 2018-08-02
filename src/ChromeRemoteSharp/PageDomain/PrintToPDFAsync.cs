@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Print page as PDF.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#printToPDF"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-printToPDF"/>
         /// </summary>
         /// <param name="landscape">Paper orientation. Defaults to false.</param>
         /// <param name="displayHeaderFooter">Display header and footer. Defaults to false.</param>
@@ -28,7 +28,7 @@ namespace ChromeRemoteSharp.PageDomain
         /// <param name="footerTemplate">HTML template for the print footer. Should use the same format as the `headerTemplate`.</param>
         /// <param name="preferCSSPageSize">Whether or not to prefer page size as defined by css. Defaults to false, in which case the content will be scaled to fit the paper size.</param>
         /// <returns></returns>
-        public async Task<JObject> PrintToPDFAsync(bool? landscape,bool? displayHeaderFooter,bool? printBackground,int? scale,int? paperWidth,int? paperHeight,int? marginTop,int? marginBottom,int? marginLeft,int? marginRight,string pageRanges,bool? ignoreInvalidPageRanges,string headerTemplate,string footerTemplate,bool? preferCSSPageSize)
+        public async Task<JObject> PrintToPDFAsync(bool? landscape = null, bool? displayHeaderFooter = null, bool? printBackground = null, int? scale = null, int? paperWidth = null, int? paperHeight = null, int? marginTop = null, int? marginBottom = null, int? marginLeft = null, int? marginRight = null, string pageRanges = null, bool? ignoreInvalidPageRanges = null, string headerTemplate = null, string footerTemplate = null, bool? preferCSSPageSize = null)
         {
             return await CommandAsync("printToPDF", 
                  new KeyValuePair<string, object>("landscape", landscape), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.BrowserDomain
     {
         /// <summary>
         /// Get position and size of the browser window.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#getWindowBounds"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowBounds"/>
         /// </summary>
         /// <param name="windowId">Browser window id.</param>
         /// <returns></returns>

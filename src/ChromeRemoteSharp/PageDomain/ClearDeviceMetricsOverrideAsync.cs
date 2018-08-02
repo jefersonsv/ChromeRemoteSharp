@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Clears the overriden device metrics.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#clearDeviceMetricsOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-clearDeviceMetricsOverride"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Searches for a given string in the DOM tree. Use `getSearchResults` to access search results or `cancelSearch` to end this search session.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#performSearch"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-performSearch"/>
         /// </summary>
         /// <param name="query">Plain text or query selector or XPath search query.</param>
         /// <param name="includeUserAgentShadowDOM">True to search in user agent shadow DOM.</param>
         /// <returns></returns>
-        public async Task<JObject> PerformSearchAsync(string query,bool? includeUserAgentShadowDOM)
+        public async Task<JObject> PerformSearchAsync(string query, bool? includeUserAgentShadowDOM = null)
         {
             return await CommandAsync("performSearch", 
                  new KeyValuePair<string, object>("query", query), 

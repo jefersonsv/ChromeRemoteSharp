@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setEmitTouchEventsForMouse"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setEmitTouchEventsForMouse"/>
         /// </summary>
         /// <param name="enabled">Whether touch emulation based on mouse input should be enabled.</param>
         /// <param name="configuration">Touch/gesture events configuration. Default: current platform.</param>
         /// <returns></returns>
-        public async Task<JObject> SetEmitTouchEventsForMouseAsync(bool enabled,string configuration)
+        public async Task<JObject> SetEmitTouchEventsForMouseAsync(bool enabled, string configuration = null)
         {
             return await CommandAsync("setEmitTouchEventsForMouse", 
                  new KeyValuePair<string, object>("enabled", enabled), 

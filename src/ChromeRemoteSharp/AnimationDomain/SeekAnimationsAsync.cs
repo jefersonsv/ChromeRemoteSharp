@@ -10,16 +10,15 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Seek a set of animations to a particular time within each animation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#seekAnimations"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-seekAnimations"/>
         /// </summary>
         /// <param name="animations">List of animation ids to seek.</param>
         /// <param name="currentTime">Set the current time of each animation.</param>
         /// <returns></returns>
-        public async Task<JObject> SeekAnimationsAsync(string[] animations,int currentTime)
+        public async Task<JObject> SeekAnimationsAsync(string[] animations, int currentTime)
         {
             return await CommandAsync("seekAnimations", 
-                 new KeyValuePair<string, object>("animations", animations)
-, 
+                 new KeyValuePair<string, object>("animations", animations), 
                  new KeyValuePair<string, object>("currentTime", currentTime)
                  );
         }

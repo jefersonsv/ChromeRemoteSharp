@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Undoes the last performed action.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#undo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-undo"/>
         /// </summary>
 
         /// <returns></returns>

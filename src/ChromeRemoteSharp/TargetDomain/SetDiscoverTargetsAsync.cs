@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Controls whether to discover available targets and notify via `targetCreated/targetInfoChanged/targetDestroyed` events.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#setDiscoverTargets"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-setDiscoverTargets"/>
         /// </summary>
         /// <param name="discover">Whether to discover available targets.</param>
         /// <returns></returns>

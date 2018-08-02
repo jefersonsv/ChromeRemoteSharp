@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LayerTreeDomain
     {
         /// <summary>
         /// Replays the layer snapshot and returns canvas log.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#snapshotCommandLog"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#method-snapshotCommandLog"/>
         /// </summary>
         /// <param name="snapshotId">The id of the layer snapshot.</param>
         /// <returns></returns>

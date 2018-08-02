@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Paints viewport size upon main frame resize.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setShowViewportSizeOnResize"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowViewportSizeOnResize"/>
         /// </summary>
         /// <param name="show">Whether to paint size or not.</param>
         /// <returns></returns>

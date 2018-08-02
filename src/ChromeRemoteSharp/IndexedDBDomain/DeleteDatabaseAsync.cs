@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.IndexedDBDomain
     {
         /// <summary>
         /// Deletes a database.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#deleteDatabase"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/IndexedDB#method-deleteDatabase"/>
         /// </summary>
         /// <param name="securityOrigin">Security origin.</param>
         /// <param name="databaseName">Database name.</param>
         /// <returns></returns>
-        public async Task<JObject> DeleteDatabaseAsync(string securityOrigin,string databaseName)
+        public async Task<JObject> DeleteDatabaseAsync(string securityOrigin, string databaseName)
         {
             return await CommandAsync("deleteDatabase", 
                  new KeyValuePair<string, object>("securityOrigin", securityOrigin), 

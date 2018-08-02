@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Blocks URLs from loading.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setBlockedURLs"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setBlockedURLs"/>
         /// </summary>
         /// <param name="urls">URL patterns to block. Wildcards ('*') are allowed.</param>
         /// <returns></returns>

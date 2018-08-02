@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ApplicationCacheDomain
     {
         /// <summary>
         /// Returns relevant application cache data for the document in given frame.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#getApplicationCacheForFrame"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-getApplicationCacheForFrame"/>
         /// </summary>
         /// <param name="frameId">Identifier of the frame containing document whose application cache is retrieved.</param>
         /// <returns></returns>

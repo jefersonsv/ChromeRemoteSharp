@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Sets breakpoint on XMLHttpRequest.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#setXHRBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-setXHRBreakpoint"/>
         /// </summary>
         /// <param name="url">Resource URL substring. All XHRs having this substring in the URL will get stopped upon.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Tells whether emulation of network conditions is supported.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#canEmulateNetworkConditions"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canEmulateNetworkConditions"/>
         /// </summary>
 
         /// <returns></returns>

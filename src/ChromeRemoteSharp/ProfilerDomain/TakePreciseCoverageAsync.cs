@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Collect coverage data for the current isolate, and resets execution counters. Precise code coverage needs to have started.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#takePreciseCoverage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-takePreciseCoverage"/>
         /// </summary>
 
         /// <returns></returns>

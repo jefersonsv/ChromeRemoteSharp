@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Enables domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

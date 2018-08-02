@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.BrowserDomain
     {
         /// <summary>
         /// Get the browser window that contains the devtools target.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#getWindowForTarget"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Browser#method-getWindowForTarget"/>
         /// </summary>
         /// <param name="targetId">Devtools agent host id.</param>
         /// <returns></returns>

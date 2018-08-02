@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Focuses the given element.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#focus"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-focus"/>
         /// </summary>
         /// <param name="nodeId">Identifier of the node.</param>
         /// <param name="backendNodeId">Identifier of the backend node.</param>
         /// <param name="objectId">JavaScript object id of the node wrapper.</param>
         /// <returns></returns>
-        public async Task<JObject> FocusAsync(string nodeId,string backendNodeId,string objectId)
+        public async Task<JObject> FocusAsync(int nodeId, string backendNodeId = null, string objectId = null)
         {
             return await CommandAsync("focus", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

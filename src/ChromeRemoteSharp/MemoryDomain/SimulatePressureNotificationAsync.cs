@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// Simulate a memory pressure notification in all processes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#simulatePressureNotification"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-simulatePressureNotification"/>
         /// </summary>
         /// <param name="level">Memory pressure level of the notification.</param>
         /// <returns></returns>

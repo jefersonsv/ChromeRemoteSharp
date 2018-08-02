@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Returns attributes for the specified node.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#getAttributes"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-getAttributes"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to retrieve attibutes for.</param>
         /// <returns></returns>
-        public async Task<JObject> GetAttributesAsync(string nodeId)
+        public async Task<JObject> GetAttributesAsync(int nodeId)
         {
             return await CommandAsync("getAttributes", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LayerTreeDomain
     {
         /// <summary>
         /// Releases layer snapshot captured by the back-end.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#releaseSnapshot"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#method-releaseSnapshot"/>
         /// </summary>
         /// <param name="snapshotId">The id of the layer snapshot.</param>
         /// <returns></returns>

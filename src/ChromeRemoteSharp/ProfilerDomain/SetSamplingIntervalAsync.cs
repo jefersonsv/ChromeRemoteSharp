@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#setSamplingInterval"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-setSamplingInterval"/>
         /// </summary>
         /// <param name="interval">New sampling interval in microseconds.</param>
         /// <returns></returns>

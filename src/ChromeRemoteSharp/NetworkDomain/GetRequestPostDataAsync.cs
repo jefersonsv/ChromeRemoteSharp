@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Returns post data sent with the request. Returns an error when no data was sent with the request.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#getRequestPostData"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getRequestPostData"/>
         /// </summary>
         /// <param name="requestId">Identifier of the network request to get content for.</param>
         /// <returns></returns>

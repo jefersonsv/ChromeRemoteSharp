@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Tells whether clearing browser cache is supported.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#canClearBrowserCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-canClearBrowserCache"/>
         /// </summary>
 
         /// <returns></returns>

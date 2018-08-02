@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Restarts particular call frame from the beginning.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#restartFrame"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-restartFrame"/>
         /// </summary>
         /// <param name="callFrameId">Call frame identifier to evaluate on.</param>
         /// <returns></returns>

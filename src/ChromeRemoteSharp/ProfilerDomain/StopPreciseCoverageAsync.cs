@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Disable precise code coverage. Disabling releases unnecessary execution count records and allows executing optimized code.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#stopPreciseCoverage"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-stopPreciseCoverage"/>
         /// </summary>
 
         /// <returns></returns>

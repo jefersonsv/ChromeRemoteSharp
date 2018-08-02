@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ConsoleDomain
     {
         /// <summary>
         /// Disables console domain, prevents further console messages from being reported to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Console#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Console#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

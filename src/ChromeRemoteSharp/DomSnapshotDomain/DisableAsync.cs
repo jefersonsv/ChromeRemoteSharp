@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomSnapshotDomain
     {
         /// <summary>
         /// Disables DOM snapshot agent for the given page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomSnapshot#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMSnapshot#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

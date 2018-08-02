@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Resumes JavaScript execution.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#resume"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-resume"/>
         /// </summary>
 
         /// <returns></returns>

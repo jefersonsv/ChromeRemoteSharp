@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TracingDomain
     {
         /// <summary>
         /// Gets supported tracing categories.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#getCategories"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-getCategories"/>
         /// </summary>
 
         /// <returns></returns>

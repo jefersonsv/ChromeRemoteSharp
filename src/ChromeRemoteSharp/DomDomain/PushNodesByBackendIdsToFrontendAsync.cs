@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Requests that a batch of nodes is sent to the caller given their backend node ids.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#pushNodesByBackendIdsToFrontend"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-pushNodesByBackendIdsToFrontend"/>
         /// </summary>
         /// <param name="backendNodeIds">The array of backend node ids.</param>
         /// <returns></returns>

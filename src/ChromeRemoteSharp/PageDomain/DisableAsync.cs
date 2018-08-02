@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Disables page domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

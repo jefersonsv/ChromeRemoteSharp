@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Tells inspected instance to run if it was waiting for debugger to attach.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#runIfWaitingForDebugger"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-runIfWaitingForDebugger"/>
         /// </summary>
 
         /// <returns></returns>

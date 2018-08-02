@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InspectorDomain
     {
         /// <summary>
         /// Disables inspector domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Inspector#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Inspector#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

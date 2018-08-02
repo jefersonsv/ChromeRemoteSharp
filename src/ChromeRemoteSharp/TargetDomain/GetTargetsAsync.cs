@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Retrieves a list of available targets.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#getTargets"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getTargets"/>
         /// </summary>
 
         /// <returns></returns>

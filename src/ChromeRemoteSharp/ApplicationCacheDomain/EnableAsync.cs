@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ApplicationCacheDomain
     {
         /// <summary>
         /// Enables application cache domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/ApplicationCache#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

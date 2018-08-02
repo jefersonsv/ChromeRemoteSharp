@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Emulates touch event from the mouse event parameters.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#emulateTouchFromMouseEvent"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-emulateTouchFromMouseEvent"/>
         /// </summary>
         /// <param name="type">Type of the mouse event.</param>
         /// <param name="x">X coordinate of the mouse pointer in DIP.</param>
@@ -22,7 +22,7 @@ namespace ChromeRemoteSharp.InputDomain
         /// <param name="modifiers">Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8 (default: 0).</param>
         /// <param name="clickCount">Number of times the mouse button was clicked (default: 0).</param>
         /// <returns></returns>
-        public async Task<JObject> EmulateTouchFromMouseEventAsync(string type,string x,string y,string button,string timestamp,int? deltaX,int? deltaY,string modifiers,string clickCount)
+        public async Task<JObject> EmulateTouchFromMouseEventAsync(string type, string x, string y, string button, string timestamp = null, int? deltaX = null, int? deltaY = null, string modifiers = null, string clickCount = null)
         {
             return await CommandAsync("emulateTouchFromMouseEvent", 
                  new KeyValuePair<string, object>("type", type), 

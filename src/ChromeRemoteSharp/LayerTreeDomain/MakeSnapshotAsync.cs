@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LayerTreeDomain
     {
         /// <summary>
         /// Returns the layer snapshot identifier.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#makeSnapshot"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#method-makeSnapshot"/>
         /// </summary>
         /// <param name="layerId">The id of the layer.</param>
         /// <returns></returns>

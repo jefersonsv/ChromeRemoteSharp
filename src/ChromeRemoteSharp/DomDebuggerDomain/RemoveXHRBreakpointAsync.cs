@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Removes breakpoint from XMLHttpRequest.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#removeXHRBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeXHRBreakpoint"/>
         /// </summary>
         /// <param name="url">Resource URL substring.</param>
         /// <returns></returns>

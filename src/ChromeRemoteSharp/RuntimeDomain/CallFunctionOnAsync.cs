@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#callFunctionOn"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-callFunctionOn"/>
         /// </summary>
         /// <param name="functionDeclaration">Declaration of the function to call.</param>
         /// <param name="objectId">Identifier of the object to call function on. Either objectId or executionContextId should be specified.</param>
@@ -23,7 +23,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
         /// <param name="executionContextId">Specifies execution context which global object will be used to call function on. Either executionContextId or objectId should be specified.</param>
         /// <param name="objectGroup">Symbolic group name that can be used to release multiple objects. If objectGroup is not specified and objectId is, objectGroup will be inherited from object.</param>
         /// <returns></returns>
-        public async Task<JObject> CallFunctionOnAsync(string functionDeclaration,string objectId,string[] arguments,bool? silent,bool? returnByValue,bool? generatePreview,bool? userGesture,bool? awaitPromise,string executionContextId,string objectGroup)
+        public async Task<JObject> CallFunctionOnAsync(string functionDeclaration, string objectId = null, string[] arguments = null, bool? silent = null, bool? returnByValue = null, bool? generatePreview = null, bool? userGesture = null, bool? awaitPromise = null, string executionContextId = null, string objectGroup = null)
         {
             return await CommandAsync("callFunctionOn", 
                  new KeyValuePair<string, object>("functionDeclaration", functionDeclaration), 

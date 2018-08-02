@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Releases remote object with given id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#releaseObject"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-releaseObject"/>
         /// </summary>
         /// <param name="objectId">Identifier of the object to release.</param>
         /// <returns></returns>

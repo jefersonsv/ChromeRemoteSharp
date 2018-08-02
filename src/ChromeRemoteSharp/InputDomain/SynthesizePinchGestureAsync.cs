@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#synthesizePinchGesture"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-synthesizePinchGesture"/>
         /// </summary>
         /// <param name="x">X coordinate of the start of the gesture in CSS pixels.</param>
         /// <param name="y">Y coordinate of the start of the gesture in CSS pixels.</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.InputDomain
         /// <param name="relativeSpeed">Relative pointer speed in pixels per second (default: 800).</param>
         /// <param name="gestureSourceType">Which type of input events to be generated (default: 'default', which queries the platform for the preferred input type).</param>
         /// <returns></returns>
-        public async Task<JObject> SynthesizePinchGestureAsync(int x,int y,int scaleFactor,string relativeSpeed,string gestureSourceType)
+        public async Task<JObject> SynthesizePinchGestureAsync(int x, int y, int scaleFactor, string relativeSpeed = null, string gestureSourceType = null)
         {
             return await CommandAsync("synthesizePinchGesture", 
                  new KeyValuePair<string, object>("x", x), 

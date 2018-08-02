@@ -10,12 +10,15 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Returns the current time of the an animation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#getCurrentTime"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-getCurrentTime"/>
         /// </summary>
+        /// <param name="id">Id of animation.</param>
         /// <returns></returns>
-        public async Task<JObject> GetCurrentTimeAsync()
+        public async Task<JObject> GetCurrentTimeAsync(string id)
         {
-            return await CommandAsync("getCurrentTime");
+            return await CommandAsync("getCurrentTime", 
+                 new KeyValuePair<string, object>("id", id)
+                 );
         }
     }
 }

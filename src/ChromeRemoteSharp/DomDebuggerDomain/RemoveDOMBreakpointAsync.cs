@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Removes DOM breakpoint that was set using `setDOMBreakpoint`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#removeDOMBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeDOMBreakpoint"/>
         /// </summary>
         /// <param name="nodeId">Identifier of the node to remove breakpoint from.</param>
         /// <param name="type">Type of the breakpoint to remove.</param>
         /// <returns></returns>
-        public async Task<JObject> RemoveDOMBreakpointAsync(string nodeId,string type)
+        public async Task<JObject> RemoveDOMBreakpointAsync(int nodeId, string type)
         {
             return await CommandAsync("removeDOMBreakpoint", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

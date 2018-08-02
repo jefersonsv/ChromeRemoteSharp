@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Removes breakpoint on particular native event.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#removeInstrumentationBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeInstrumentationBreakpoint"/>
         /// </summary>
         /// <param name="eventName">Instrumentation name to stop on.</param>
         /// <returns></returns>

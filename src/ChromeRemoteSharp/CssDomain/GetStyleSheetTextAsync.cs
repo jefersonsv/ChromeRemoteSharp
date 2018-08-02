@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Returns the current textual content for a stylesheet.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#getStyleSheetText"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getStyleSheetText"/>
         /// </summary>
         /// <param name="styleSheetId"></param>
         /// <returns></returns>

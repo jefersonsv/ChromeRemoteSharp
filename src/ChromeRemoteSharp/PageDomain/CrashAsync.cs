@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Crashes renderer on the IO thread, generates minidumps.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#crash"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-crash"/>
         /// </summary>
 
         /// <returns></returns>

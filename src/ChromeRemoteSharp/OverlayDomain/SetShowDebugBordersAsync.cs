@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Requests that backend shows debug borders on layers
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setShowDebugBorders"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowDebugBorders"/>
         /// </summary>
         /// <param name="show">True for showing debug borders</param>
         /// <returns></returns>

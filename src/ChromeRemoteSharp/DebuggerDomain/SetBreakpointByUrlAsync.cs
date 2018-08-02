@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in `locations` property. Further matching script parsing will result in subsequent `breakpointResolved` events issued. This logical breakpoint will survive page reloads.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setBreakpointByUrl"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setBreakpointByUrl"/>
         /// </summary>
         /// <param name="lineNumber">Line number to set breakpoint at.</param>
         /// <param name="url">URL of the resources to set breakpoint on.</param>
@@ -19,7 +19,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
         /// <param name="columnNumber">Offset in the line to set breakpoint at.</param>
         /// <param name="condition">Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.</param>
         /// <returns></returns>
-        public async Task<JObject> SetBreakpointByUrlAsync(string lineNumber,string url,string urlRegex,string scriptHash,string columnNumber,string condition)
+        public async Task<JObject> SetBreakpointByUrlAsync(string lineNumber, string url = null, string urlRegex = null, string scriptHash = null, string columnNumber = null, string condition = null)
         {
             return await CommandAsync("setBreakpointByUrl", 
                  new KeyValuePair<string, object>("lineNumber", lineNumber), 

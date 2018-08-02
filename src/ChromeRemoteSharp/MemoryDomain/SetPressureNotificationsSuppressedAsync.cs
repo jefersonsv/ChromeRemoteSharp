@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// Enable/disable suppressing memory pressure notifications in all processes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#setPressureNotificationsSuppressed"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-setPressureNotificationsSuppressed"/>
         /// </summary>
         /// <param name="suppressed">If true, memory pressure notifications will be suppressed.</param>
         /// <returns></returns>

@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Highlights given quad. Coordinates are absolute with respect to the main frame viewport.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#highlightQuad"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-highlightQuad"/>
         /// </summary>
         /// <param name="quad">Quad to highlight</param>
         /// <param name="color">The highlight fill color (default: transparent).</param>
         /// <param name="outlineColor">The highlight outline color (default: transparent).</param>
         /// <returns></returns>
-        public async Task<JObject> HighlightQuadAsync(string quad,string color,string outlineColor)
+        public async Task<JObject> HighlightQuadAsync(string quad, string color = null, string outlineColor = null)
         {
             return await CommandAsync("highlightQuad", 
                  new KeyValuePair<string, object>("quad", quad), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ConsoleDomain
     {
         /// <summary>
         /// Does nothing.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Console#clearMessages"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Console#method-clearMessages"/>
         /// </summary>
 
         /// <returns></returns>

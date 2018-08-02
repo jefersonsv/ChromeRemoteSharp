@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Hides any highlight.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#hideHighlight"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-hideHighlight"/>
         /// </summary>
 
         /// <returns></returns>

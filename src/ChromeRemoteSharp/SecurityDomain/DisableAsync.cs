@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.SecurityDomain
     {
         /// <summary>
         /// Disables tracking security state changes.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Security#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

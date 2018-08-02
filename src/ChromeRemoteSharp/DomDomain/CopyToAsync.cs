@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Creates a deep copy of the specified node and places it into the target container before the given anchor.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#copyTo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-copyTo"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to copy.</param>
         /// <param name="targetNodeId">Id of the element to drop the copy into.</param>
         /// <param name="insertBeforeNodeId">Drop the copy before this node (if absent, the copy becomes the last child of `targetNodeId`).</param>
         /// <returns></returns>
-        public async Task<JObject> CopyToAsync(string nodeId,string targetNodeId,string insertBeforeNodeId)
+        public async Task<JObject> CopyToAsync(int nodeId, string targetNodeId, string insertBeforeNodeId = null)
         {
             return await CommandAsync("copyTo", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

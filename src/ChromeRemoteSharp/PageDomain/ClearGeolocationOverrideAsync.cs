@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Clears the overriden Geolocation Position and Error.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#clearGeolocationOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-clearGeolocationOverride"/>
         /// </summary>
 
         /// <returns></returns>

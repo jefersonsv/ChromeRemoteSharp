@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM attributes) for a DOM node identified by `nodeId`.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#getInlineStylesForNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getInlineStylesForNode"/>
         /// </summary>
         /// <param name="nodeId"></param>
         /// <returns></returns>
-        public async Task<JObject> GetInlineStylesForNodeAsync(string nodeId)
+        public async Task<JObject> GetInlineStylesForNodeAsync(int nodeId)
         {
             return await CommandAsync("getInlineStylesForNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

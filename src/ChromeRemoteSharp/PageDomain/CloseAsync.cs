@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Tries to close page, running its beforeunload hooks, if any.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#close"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-close"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Response to Network.requestIntercepted which either modifies the request to continue with any modifications, or blocks it, or completes it with the provided response bytes. If a network fetch occurs as a result which encounters a redirect an additional Network.requestIntercepted event will be sent with the same InterceptionId.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#continueInterceptedRequest"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-continueInterceptedRequest"/>
         /// </summary>
         /// <param name="interceptionId"></param>
         /// <param name="errorReason">If set this causes the request to fail with the given reason. Passing `Aborted` for requests marked with `isNavigationRequest` also cancels the navigation. Must not be set in response to an authChallenge.</param>
@@ -21,7 +21,7 @@ namespace ChromeRemoteSharp.NetworkDomain
         /// <param name="headers">If set this allows the request headers to be changed. Must not be set in response to an authChallenge.</param>
         /// <param name="authChallengeResponse">Response to a requestIntercepted with an authChallenge. Must not be set otherwise.</param>
         /// <returns></returns>
-        public async Task<JObject> ContinueInterceptedRequestAsync(string interceptionId,string errorReason,string rawResponse,string url,string method,string postData,string headers,string authChallengeResponse)
+        public async Task<JObject> ContinueInterceptedRequestAsync(string interceptionId, string errorReason = null, string rawResponse = null, string url = null, string method = null, string postData = null, string headers = null, string authChallengeResponse = null)
         {
             return await CommandAsync("continueInterceptedRequest", 
                  new KeyValuePair<string, object>("interceptionId", interceptionId), 

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DomDebuggerDomain
     {
         /// <summary>
         /// Removes breakpoint on particular DOM event.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomDebugger#removeEventListenerBreakpoint"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMDebugger#method-removeEventListenerBreakpoint"/>
         /// </summary>
         /// <param name="eventName">Event name.</param>
         /// <param name="targetName">EventTarget interface name.</param>
         /// <returns></returns>
-        public async Task<JObject> RemoveEventListenerBreakpointAsync(string eventName,string targetName)
+        public async Task<JObject> RemoveEventListenerBreakpointAsync(string eventName, string targetName = null)
         {
             return await CommandAsync("removeEventListenerBreakpoint", 
                  new KeyValuePair<string, object>("eventName", eventName), 

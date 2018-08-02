@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Requests information about platform fonts which we used to render child TextNodes in the given node.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#getPlatformFontsForNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-getPlatformFontsForNode"/>
         /// </summary>
         /// <param name="nodeId"></param>
         /// <returns></returns>
-        public async Task<JObject> GetPlatformFontsForNodeAsync(string nodeId)
+        public async Task<JObject> GetPlatformFontsForNodeAsync(int nodeId)
         {
             return await CommandAsync("getPlatformFontsForNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

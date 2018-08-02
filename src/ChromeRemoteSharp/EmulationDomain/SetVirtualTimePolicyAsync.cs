@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets the current virtual time policy.  Note this supersedes any previous time budget.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setVirtualTimePolicy"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setVirtualTimePolicy"/>
         /// </summary>
         /// <param name="policy"></param>
         /// <param name="budget">If set, after this many virtual milliseconds have elapsed virtual time will be paused and a virtualTimeBudgetExpired event is sent.</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.EmulationDomain
         /// <param name="waitForNavigation">If set the virtual time policy change should be deferred until any frame starts navigating. Note any previous deferred policy change is superseded.</param>
         /// <param name="initialVirtualTime">If set, base::Time::Now will be overriden to initially return this value.</param>
         /// <returns></returns>
-        public async Task<JObject> SetVirtualTimePolicyAsync(string policy,int? budget,string maxVirtualTimeTaskStarvationCount,bool? waitForNavigation,string initialVirtualTime)
+        public async Task<JObject> SetVirtualTimePolicyAsync(string policy, int? budget = null, string maxVirtualTimeTaskStarvationCount = null, bool? waitForNavigation = null, string initialVirtualTime = null)
         {
             return await CommandAsync("setVirtualTimePolicy", 
                  new KeyValuePair<string, object>("policy", policy), 

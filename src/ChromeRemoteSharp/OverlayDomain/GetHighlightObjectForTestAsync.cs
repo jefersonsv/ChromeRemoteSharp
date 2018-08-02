@@ -10,11 +10,11 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// For testing.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#getHighlightObjectForTest"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-getHighlightObjectForTest"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to get highlight object for.</param>
         /// <returns></returns>
-        public async Task<JObject> GetHighlightObjectForTestAsync(string nodeId)
+        public async Task<JObject> GetHighlightObjectForTestAsync(int nodeId)
         {
             return await CommandAsync("getHighlightObjectForTest", 
                  new KeyValuePair<string, object>("nodeId", nodeId)

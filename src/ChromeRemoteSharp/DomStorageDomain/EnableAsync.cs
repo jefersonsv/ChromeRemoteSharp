@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomStorageDomain
     {
         /// <summary>
         /// Enables storage tracking, storage events will now be delivered to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomStorage#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMStorage#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

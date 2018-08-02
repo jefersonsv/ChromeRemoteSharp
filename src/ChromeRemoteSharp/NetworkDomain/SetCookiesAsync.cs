@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Sets given cookies.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setCookies"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCookies"/>
         /// </summary>
         /// <param name="cookies">Cookies to be set.</param>
         /// <returns></returns>

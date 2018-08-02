@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TracingDomain
     {
         /// <summary>
         /// Record a clock sync marker in the trace.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#recordClockSyncMarker"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tracing#method-recordClockSyncMarker"/>
         /// </summary>
         /// <param name="syncId">The ID of this clock sync marker</param>
         /// <returns></returns>

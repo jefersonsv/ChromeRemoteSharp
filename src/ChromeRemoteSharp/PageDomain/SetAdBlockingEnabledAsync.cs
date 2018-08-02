@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Enable Chrome's experimental ad filter on all sites.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setAdBlockingEnabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setAdBlockingEnabled"/>
         /// </summary>
         /// <param name="enabled">Whether to block ads.</param>
         /// <returns></returns>

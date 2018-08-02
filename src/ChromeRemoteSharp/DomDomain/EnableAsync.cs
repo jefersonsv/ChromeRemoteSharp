@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Enables DOM agent for the given page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

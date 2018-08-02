@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LogDomain
     {
         /// <summary>
         /// start violation reporting.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#startViolationsReport"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#method-startViolationsReport"/>
         /// </summary>
         /// <param name="config">Configuration for violations.</param>
         /// <returns></returns>

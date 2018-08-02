@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Tries to update the web lifecycle state of the page. It will transition the page to the given state according to: https://github.com/WICG/web-lifecycle/
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setWebLifecycleState"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setWebLifecycleState"/>
         /// </summary>
         /// <param name="state">Target lifecycle state</param>
         /// <returns></returns>

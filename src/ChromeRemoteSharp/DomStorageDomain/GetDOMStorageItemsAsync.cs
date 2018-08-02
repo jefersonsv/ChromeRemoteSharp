@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomStorageDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DomStorage#getDOMStorageItems"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOMStorage#method-getDOMStorageItems"/>
         /// </summary>
         /// <param name="storageId"></param>
         /// <returns></returns>

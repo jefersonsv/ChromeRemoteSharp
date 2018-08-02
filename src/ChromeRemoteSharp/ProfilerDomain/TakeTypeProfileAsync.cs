@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Collect type profile.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#takeTypeProfile"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-takeTypeProfile"/>
         /// </summary>
 
         /// <returns></returns>

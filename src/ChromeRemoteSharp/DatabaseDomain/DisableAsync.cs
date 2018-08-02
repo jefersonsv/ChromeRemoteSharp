@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DatabaseDomain
     {
         /// <summary>
         /// Disables database tracking, prevents database events from being sent to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

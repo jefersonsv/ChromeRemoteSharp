@@ -9,12 +9,21 @@ namespace ChromeRemoteSharp
 {
     public static class Helper
     {
-        public static async Task<Uri> FirstWebSocketDebuggerUrlAsync()
+        public static async Task<bool> CheckWebSocketAsync(int port = 9222)
         {
-            return await FirstWebSocketDebuggerUrlAsync(9222);
+            var url = $"http://localhost:{port}/json";
+            HttpClient client = new HttpClient();
+            try
+            {
+                var resp = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+                return true;
+            }
+            catch (HttpRequestException ex) { }
+
+            return false;
         }
 
-        public static async Task<Uri> FirstWebSocketDebuggerUrlAsync(int port)
+        public static async Task<Uri> FirstWebSocketDebuggerUrlAsync(int port = 9222)
         {
             var url = $"http://localhost:{port}/json";
 
@@ -25,7 +34,7 @@ namespace ChromeRemoteSharp
             return new Uri(arr.First["webSocketDebuggerUrl"].ToString());
         }
 
-        public static void StartChromeHeadless(string url, string workingDirectory = null)
+        public static void StartChromeHeadless(string url = null, string workingDirectory = null)
         {
             var settings = new CliWrap.Models.CliSettings();
             if (!string.IsNullOrEmpty(workingDirectory))
@@ -34,16 +43,11 @@ namespace ChromeRemoteSharp
             // "C:\Program Files (x86)\Google\Chrome\Application\"chrome --headless --enable-automation --enable-logging --disable-gpu --remote-debugging-port=9222 
             using (var cli = new CliWrap.Cli(@"C:\Program Files (x86)\Google\Chrome\Application\chrome", settings))
             {
-                cli.ExecuteAndForget($"--headless --enable-automation --disable-gpu --remote-debugging-port=9222 {url}");
+                cli.ExecuteAndForget($"--headless --incognito --disable-extensions --safe-plugins --disable-translate --enable-automation --disable-gpu --remote-debugging-port=9222 {url}");
             }
         }
 
-        public static void StartChromeDevTools()
-        {
-            StartChromeDevTools(9222);
-        }
-
-        public static void StartChromeDevTools(int port)
+        public static void StartChromeDevTools(int port = 9222)
         {
             using (var cli = new CliWrap.Cli(@"C:\Program Files (x86)\Google\Chrome\Application\chrome"))
             {

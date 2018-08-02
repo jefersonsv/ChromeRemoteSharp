@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Describes node given its id, does not require domain to be enabled. Does not start tracking any objects, can be used for automation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#describeNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-describeNode"/>
         /// </summary>
         /// <param name="nodeId">Identifier of the node.</param>
         /// <param name="backendNodeId">Identifier of the backend node.</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.DomDomain
         /// <param name="depth">The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the entire subtree or provide an integer larger than 0.</param>
         /// <param name="pierce">Whether or not iframes and shadow roots should be traversed when returning the subtree (default is false).</param>
         /// <returns></returns>
-        public async Task<JObject> DescribeNodeAsync(string nodeId,string backendNodeId,string objectId,string depth,bool? pierce)
+        public async Task<JObject> DescribeNodeAsync(int nodeId, string backendNodeId = null, string objectId = null, string depth = null, bool? pierce = null)
         {
             return await CommandAsync("describeNode", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

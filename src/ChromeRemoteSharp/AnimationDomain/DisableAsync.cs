@@ -10,8 +10,9 @@ namespace ChromeRemoteSharp.AnimationDomain
     {
         /// <summary>
         /// Disables animation domain notifications.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Animation#method-disable"/>
         /// </summary>
+
         /// <returns></returns>
         public async Task<JObject> DisableAsync()
         {

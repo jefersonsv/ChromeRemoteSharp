@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Seeds compilation cache for given url. Compilation cache does not survive cross-process navigation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#addCompilationCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-addCompilationCache"/>
         /// </summary>
         /// <param name="url"></param>
         /// <param name="data">Base64-encoded data</param>
         /// <returns></returns>
-        public async Task<JObject> AddCompilationCacheAsync(string url,string data)
+        public async Task<JObject> AddCompilationCacheAsync(string url, string data)
         {
             return await CommandAsync("addCompilationCache", 
                  new KeyValuePair<string, object>("url", url), 

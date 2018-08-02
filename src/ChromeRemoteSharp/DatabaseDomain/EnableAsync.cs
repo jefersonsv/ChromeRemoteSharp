@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DatabaseDomain
     {
         /// <summary>
         /// Enables database tracking, database events will now be delivered to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#enable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Database#method-enable"/>
         /// </summary>
 
         /// <returns></returns>

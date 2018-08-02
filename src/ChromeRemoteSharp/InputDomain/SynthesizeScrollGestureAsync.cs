@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.InputDomain
     {
         /// <summary>
         /// Synthesizes a scroll gesture over a time period by issuing appropriate touch events.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#synthesizeScrollGesture"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Input#method-synthesizeScrollGesture"/>
         /// </summary>
         /// <param name="x">X coordinate of the start of the gesture in CSS pixels.</param>
         /// <param name="y">Y coordinate of the start of the gesture in CSS pixels.</param>
@@ -25,7 +25,7 @@ namespace ChromeRemoteSharp.InputDomain
         /// <param name="repeatDelayMs">The number of milliseconds delay between each repeat. (default: 250).</param>
         /// <param name="interactionMarkerName">The name of the interaction markers to generate, if not empty (default: "").</param>
         /// <returns></returns>
-        public async Task<JObject> SynthesizeScrollGestureAsync(int x,int y,int? xDistance,int? yDistance,int? xOverscroll,int? yOverscroll,bool? preventFling,string speed,string gestureSourceType,string repeatCount,string repeatDelayMs,string interactionMarkerName)
+        public async Task<JObject> SynthesizeScrollGestureAsync(int x, int y, int? xDistance = null, int? yDistance = null, int? xOverscroll = null, int? yOverscroll = null, bool? preventFling = null, string speed = null, string gestureSourceType = null, string repeatCount = null, string repeatDelayMs = null, string interactionMarkerName = null)
         {
             return await CommandAsync("synthesizeScrollGesture", 
                  new KeyValuePair<string, object>("x", x), 

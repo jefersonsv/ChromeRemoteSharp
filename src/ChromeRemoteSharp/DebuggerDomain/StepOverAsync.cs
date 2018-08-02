@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Steps over the statement.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#stepOver"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-stepOver"/>
         /// </summary>
 
         /// <returns></returns>

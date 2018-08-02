@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Overrides the Device Orientation.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#setDeviceOrientationOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-setDeviceOrientationOverride"/>
         /// </summary>
         /// <param name="alpha">Mock alpha</param>
         /// <param name="beta">Mock beta</param>
         /// <param name="gamma">Mock gamma</param>
         /// <returns></returns>
-        public async Task<JObject> SetDeviceOrientationOverrideAsync(int alpha,int beta,int gamma)
+        public async Task<JObject> SetDeviceOrientationOverrideAsync(int alpha, int beta, int gamma)
         {
             return await CommandAsync("setDeviceOrientationOverride", 
                  new KeyValuePair<string, object>("alpha", alpha), 

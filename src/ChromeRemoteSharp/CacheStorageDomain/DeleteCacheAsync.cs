@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CacheStorageDomain
     {
         /// <summary>
         /// Deletes a cache.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#deleteCache"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CacheStorage#method-deleteCache"/>
         /// </summary>
         /// <param name="cacheId">Id of cache for deletion.</param>
         /// <returns></returns>

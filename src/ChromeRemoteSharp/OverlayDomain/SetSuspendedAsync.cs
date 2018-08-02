@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setSuspended"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setSuspended"/>
         /// </summary>
         /// <param name="suspended">Whether overlay should be suspended and not consume any resources until resumed.</param>
         /// <returns></returns>

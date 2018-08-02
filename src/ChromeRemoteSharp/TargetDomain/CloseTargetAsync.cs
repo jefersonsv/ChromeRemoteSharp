@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Closes the target. If the target is a page that gets closed too.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#closeTarget"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-closeTarget"/>
         /// </summary>
         /// <param name="targetId"></param>
         /// <returns></returns>

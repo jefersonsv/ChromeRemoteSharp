@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TetheringDomain
     {
         /// <summary>
         /// Request browser port binding.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tethering#bind"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Tethering#method-bind"/>
         /// </summary>
         /// <param name="port">Port number to bind.</param>
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.OverlayDomain
     {
         /// <summary>
         /// Requests that backend shows the FPS counter
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#setShowFPSCounter"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Overlay#method-setShowFPSCounter"/>
         /// </summary>
         /// <param name="show">True for showing the FPS counter</param>
         /// <returns></returns>

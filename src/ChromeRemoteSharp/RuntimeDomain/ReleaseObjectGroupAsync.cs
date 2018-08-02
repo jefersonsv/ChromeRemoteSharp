@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Releases all remote objects that belong to a given group.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#releaseObjectGroup"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-releaseObjectGroup"/>
         /// </summary>
         /// <param name="objectGroup">Symbolic object group name.</param>
         /// <returns></returns>

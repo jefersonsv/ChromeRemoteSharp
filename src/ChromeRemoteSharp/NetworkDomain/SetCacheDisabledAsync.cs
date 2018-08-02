@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Toggles ignoring cache for each request. If `true`, cache will not be used.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setCacheDisabled"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setCacheDisabled"/>
         /// </summary>
         /// <param name="cacheDisabled">Cache disabled state.</param>
         /// <returns></returns>

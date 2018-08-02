@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Returns the isolate id.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#getIsolateId"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-getIsolateId"/>
         /// </summary>
 
         /// <returns></returns>

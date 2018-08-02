@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Marks last undoable state.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#markUndoableState"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-markUndoableState"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Returns content served for the given request.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#getResponseBody"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-getResponseBody"/>
         /// </summary>
         /// <param name="requestId">Identifier of the network request to get content for.</param>
         /// <returns></returns>

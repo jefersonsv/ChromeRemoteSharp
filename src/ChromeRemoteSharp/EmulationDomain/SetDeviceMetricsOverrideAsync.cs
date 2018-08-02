@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.EmulationDomain
     {
         /// <summary>
         /// Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results).
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#setDeviceMetricsOverride"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setDeviceMetricsOverride"/>
         /// </summary>
         /// <param name="width">Overriding width value in pixels (minimum 0, maximum 10000000). 0 disables the override.</param>
         /// <param name="height">Overriding height value in pixels (minimum 0, maximum 10000000). 0 disables the override.</param>
@@ -25,7 +25,7 @@ namespace ChromeRemoteSharp.EmulationDomain
         /// <param name="screenOrientation">Screen orientation override.</param>
         /// <param name="viewport">If set, the visible area of the page will be overridden to this viewport. This viewport change is not observed by the page, e.g. viewport-relative elements do not change positions.</param>
         /// <returns></returns>
-        public async Task<JObject> SetDeviceMetricsOverrideAsync(string width,string height,int deviceScaleFactor,bool mobile,int? scale,string screenWidth,string screenHeight,string positionX,string positionY,bool? dontSetVisibleSize,string screenOrientation,string viewport)
+        public async Task<JObject> SetDeviceMetricsOverrideAsync(string width, string height, int deviceScaleFactor, bool mobile, int? scale = null, string screenWidth = null, string screenHeight = null, string positionX = null, string positionY = null, bool? dontSetVisibleSize = null, string screenOrientation = null, string viewport = null)
         {
             return await CommandAsync("setDeviceMetricsOverride", 
                  new KeyValuePair<string, object>("width", width), 

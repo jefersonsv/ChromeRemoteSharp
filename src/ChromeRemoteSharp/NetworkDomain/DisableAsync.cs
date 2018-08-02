@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Disables network tracking, prevents network events from being sent to the client.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

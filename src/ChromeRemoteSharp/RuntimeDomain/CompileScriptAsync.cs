@@ -10,14 +10,14 @@ namespace ChromeRemoteSharp.RuntimeDomain
     {
         /// <summary>
         /// Compiles expression.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#compileScript"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Runtime#method-compileScript"/>
         /// </summary>
         /// <param name="expression">Expression to compile.</param>
         /// <param name="sourceURL">Source url to be set for the script.</param>
         /// <param name="persistScript">Specifies whether the compiled script should be persisted.</param>
         /// <param name="executionContextId">Specifies in which execution context to perform script run. If the parameter is omitted the evaluation will be performed in the context of the inspected page.</param>
         /// <returns></returns>
-        public async Task<JObject> CompileScriptAsync(string expression,string sourceURL,bool persistScript,string executionContextId)
+        public async Task<JObject> CompileScriptAsync(string expression, string sourceURL, bool persistScript, string executionContextId = null)
         {
             return await CommandAsync("compileScript", 
                  new KeyValuePair<string, object>("expression", expression), 

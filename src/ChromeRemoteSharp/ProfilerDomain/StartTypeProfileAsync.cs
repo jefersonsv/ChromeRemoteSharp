@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.ProfilerDomain
     {
         /// <summary>
         /// Enable type profile.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#startTypeProfile"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Profiler#method-startTypeProfile"/>
         /// </summary>
 
         /// <returns></returns>

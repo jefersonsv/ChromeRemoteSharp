@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.PageDomain
     {
         /// <summary>
         /// Starts sending each frame using the `screencastFrame` event.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#startScreencast"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Page#method-startScreencast"/>
         /// </summary>
         /// <param name="format">Image compression format.</param>
         /// <param name="quality">Compression quality from range [0..100].</param>
@@ -18,7 +18,7 @@ namespace ChromeRemoteSharp.PageDomain
         /// <param name="maxHeight">Maximum screenshot height.</param>
         /// <param name="everyNthFrame">Send every n-th frame.</param>
         /// <returns></returns>
-        public async Task<JObject> StartScreencastAsync(string format,string quality,string maxWidth,string maxHeight,string everyNthFrame)
+        public async Task<JObject> StartScreencastAsync(string format = null, string quality = null, string maxWidth = null, string maxHeight = null, string everyNthFrame = null)
         {
             return await CommandAsync("startScreencast", 
                  new KeyValuePair<string, object>("format", format), 

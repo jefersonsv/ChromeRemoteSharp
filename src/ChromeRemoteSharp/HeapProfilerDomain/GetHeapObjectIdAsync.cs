@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.HeapProfilerDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#getHeapObjectId"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/HeapProfiler#method-getHeapObjectId"/>
         /// </summary>
         /// <param name="objectId">Identifier of the object to get heap object id for.</param>
         /// <returns></returns>

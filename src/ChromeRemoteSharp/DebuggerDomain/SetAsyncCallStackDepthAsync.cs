@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Enables or disables async call stacks tracking.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#setAsyncCallStackDepth"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-setAsyncCallStackDepth"/>
         /// </summary>
         /// <param name="maxDepth">Maximum depth of async call stacks. Setting to `0` will effectively disable collecting async call stacks (default).</param>
         /// <returns></returns>

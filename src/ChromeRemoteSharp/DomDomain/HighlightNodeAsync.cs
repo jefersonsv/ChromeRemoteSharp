@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Highlights DOM node.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#highlightNode"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-highlightNode"/>
         /// </summary>
 
         /// <returns></returns>

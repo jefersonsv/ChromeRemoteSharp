@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LayerTreeDomain
     {
         /// <summary>
         /// Disables compositing tree inspection.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/LayerTree#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

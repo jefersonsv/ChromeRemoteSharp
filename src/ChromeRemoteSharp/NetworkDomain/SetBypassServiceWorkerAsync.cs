@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.NetworkDomain
     {
         /// <summary>
         /// Toggles ignoring of service worker for each request.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#setBypassServiceWorker"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Network#method-setBypassServiceWorker"/>
         /// </summary>
         /// <param name="bypass">Bypass service worker and load from network.</param>
         /// <returns></returns>

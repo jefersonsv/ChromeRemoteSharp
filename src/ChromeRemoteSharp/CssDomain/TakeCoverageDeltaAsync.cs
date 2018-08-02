@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Obtain list of rules that became used since last call to this method (or since start of coverage instrumentation)
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#takeCoverageDelta"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-takeCoverageDelta"/>
         /// </summary>
 
         /// <returns></returns>

@@ -10,12 +10,12 @@ namespace ChromeRemoteSharp.DebuggerDomain
     {
         /// <summary>
         /// Continues execution until specific location is reached.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#continueToLocation"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Debugger#method-continueToLocation"/>
         /// </summary>
         /// <param name="location">Location to continue to.</param>
         /// <param name="targetCallFrames"></param>
         /// <returns></returns>
-        public async Task<JObject> ContinueToLocationAsync(string location,string targetCallFrames)
+        public async Task<JObject> ContinueToLocationAsync(string location, string targetCallFrames = null)
         {
             return await CommandAsync("continueToLocation", 
                  new KeyValuePair<string, object>("location", location), 

@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.LogDomain
     {
         /// <summary>
         /// Clears the log.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#clear"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Log#method-clear"/>
         /// </summary>
 
         /// <returns></returns>

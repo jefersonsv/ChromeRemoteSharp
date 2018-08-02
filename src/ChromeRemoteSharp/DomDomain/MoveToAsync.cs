@@ -10,13 +10,13 @@ namespace ChromeRemoteSharp.DomDomain
     {
         /// <summary>
         /// Moves node into the new container, places it before the given anchor.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Dom#moveTo"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/DOM#method-moveTo"/>
         /// </summary>
         /// <param name="nodeId">Id of the node to move.</param>
         /// <param name="targetNodeId">Id of the element to drop the moved node into.</param>
         /// <param name="insertBeforeNodeId">Drop node before this one (if absent, the moved node becomes the last child of `targetNodeId`).</param>
         /// <returns></returns>
-        public async Task<JObject> MoveToAsync(string nodeId,string targetNodeId,string insertBeforeNodeId)
+        public async Task<JObject> MoveToAsync(int nodeId, string targetNodeId, string insertBeforeNodeId = null)
         {
             return await CommandAsync("moveTo", 
                  new KeyValuePair<string, object>("nodeId", nodeId), 

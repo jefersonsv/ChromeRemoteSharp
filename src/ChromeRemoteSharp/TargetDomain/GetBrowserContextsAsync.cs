@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.TargetDomain
     {
         /// <summary>
         /// Returns all browser contexts created with `Target.createBrowserContext` method.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#getBrowserContexts"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Target#method-getBrowserContexts"/>
         /// </summary>
 
         /// <returns></returns>

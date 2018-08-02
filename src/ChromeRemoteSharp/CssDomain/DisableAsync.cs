@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.CssDomain
     {
         /// <summary>
         /// Disables the CSS agent for the given page.
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Css#disable"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/CSS#method-disable"/>
         /// </summary>
 
         /// <returns></returns>

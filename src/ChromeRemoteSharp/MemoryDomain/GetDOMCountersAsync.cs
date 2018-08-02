@@ -10,7 +10,7 @@ namespace ChromeRemoteSharp.MemoryDomain
     {
         /// <summary>
         /// 
-        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#getDOMCounters"/>
+        /// <see cref="https://chromedevtools.github.io/devtools-protocol/tot/Memory#method-getDOMCounters"/>
         /// </summary>
 
         /// <returns></returns>
