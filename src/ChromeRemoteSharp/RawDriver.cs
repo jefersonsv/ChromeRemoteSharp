@@ -17,6 +17,7 @@ namespace ChromeRemoteSharp
         long id;
         readonly Dictionary<long, JObject> cmds;
 
+        public TimeSpan CommandTimeout { get; set; } = new TimeSpan(0, 0, 0, 30, 0);
         public TimeSpan TimeCheckResponse { get; set; } = new TimeSpan(0, 0, 0, 0, 100);
 
         public RawDriver(Uri url)
@@ -71,16 +72,21 @@ namespace ChromeRemoteSharp
 
         public async Task<JObject> Command(string command, params KeyValuePair<string, object>[] args)
         {
-            return await Task.Run<JObject>(() =>
+            var cmd = StringCommand(command, args);
+            ws.Send(cmd.Item2);
+
+            var commandStartedAt = DateTime.Now;
+            while (cmds[cmd.Item1] == null)
             {
-                var cmd = StringCommand(command, args);
-                ws.Send(cmd.Item2);
+                await Task.Delay(TimeCheckResponse.Milliseconds);
+                
+                if (DateTime.Now - commandStartedAt > CommandTimeout)
+                {
+                    throw new Exception("Command timed out");
+                }
+            }
 
-                while (cmds[cmd.Item1] == null)
-                    System.Threading.Thread.Sleep(this.TimeCheckResponse.Milliseconds);
-
-                return cmds[cmd.Item1];
-            });
+            return cmds[cmd.Item1];
         }
 
         (long, string) StringCommand(string method, params KeyValuePair<string, object>[] args)
